@@ -18,3 +18,63 @@ body {
   font-family: 'Inter Tight', sans-serif;
   font-size: 16px;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+}
+
+.section {
+  padding-bottom: 64px;
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 96px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    padding-bottom: 164px;
+  }
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    min-width: 320px;
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.accent {
+  color: var(--red);
+}
