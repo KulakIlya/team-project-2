@@ -1,5 +1,4 @@
 import Accordion from 'accordion-js';
-
 /**
  * initializes accordion instance
  * @param {object} options - object of required classes
@@ -7,18 +6,18 @@ import Accordion from 'accordion-js';
  * @param {string} options.elementClass - The class of each accordion element.
  * @param {string} options.triggerClass - The class of each accordion trigger element.
  * @param {string} options.panelClass – The class of each accordion panel element.
- * @returns {void}
+ * @returns {Accordion} – created instance
  */
 
-export function createAccordion({
+export default function createAccordion({
   containerClass,
   elementClass,
   triggerClass,
   panelClass,
 }) {
-  const container = getContainerRef(`.${containerClass}`);
-  new Accordion(container, {
-    elementClass,
+  const container = getClassName(`.${containerClass}`);
+
+  return new Accordion(container, {
     elementClass,
     triggerClass,
     panelClass,
@@ -28,11 +27,11 @@ export function createAccordion({
 /**
  * finds element in DOM. If no element found – throws an error
  * @param {string} className – class of the container
- * @returns {Node}
+ * @returns {string}
  */
 
-function getContainerRef(className) {
+function getClassName(className) {
   const ref = document.querySelector(className);
   if (!ref) throw new Error(`Element with class ${className} was not found`);
-  return ref;
+  return className;
 }
