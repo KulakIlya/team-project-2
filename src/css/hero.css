@@ -1,5 +1,195 @@
-.hero-section{/* background-color: bisque; */
-  background-image: url("/images/hero_mobile_bg_1x.jpg");
+.hero-section {
+  background-image: url('/images/hero_mobile_bg_1x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 375px;
   height: 812px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-hero {
+  text-align: start;
+  min-width: 343px;
+  max-height: 250px;
+
+  font-weight: 500;
+  font-size: 50px;
+  /* line-height: 1; */
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fafafa;
+  margin-bottom: auto;
+  margin-top: 281px;
+}
+
+.soc-media {
+  /* width: 320px; */
+  height: 37px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 32px;
+}
+
+.social-list {
+  display: flex;
+  gap: 4px;
+  margin-right: 4px;
+}
+
+.social-item:hover,
+.social-item:focus {
+  border: 1px solid #fafafa;
+}
+
+.social-item {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 10px 8px;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-soc {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+.mail-addres {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 10px 12px;
+  /* width: 178px;
+  height: 37px; */
+}
+
+
+
+.mail-addres:hover,
+.mail-addres:focus {
+  border: 1px solid #fafafa;
+}
+
+.mail-link {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+@media screen and (min-width: 375px) {
+  /* .mail-link {
+    font-size: 14px;
+    letter-spacing: -0.01em;
+  } */
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    background-image: url('/images/hero_tablet_bg_1x.jpg');
+    width: 768px;
+    height: 1024px;
+  }
+
+  .title-hero {
+    width: 632px;
+    height: 450px;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+  }
+
+  .soc-media {
+    width: 473px;
+    height: 55px;
+    /* right: 32px; */
+    margin-left: 263px;
+  }
+
+  .social-item {
+    width: 53px;
+    height: 55px;
+    padding: 18px 17px;
+  }
+
+  .item-soc {
+    font-size: 16px;
+  }
+
+  .social-list {
+    gap: 8px;
+    margin-right: 8px;
+  }
+
+  .mail-addres {
+    padding: 18px 24px;
+  }
+
+  .mail-link {
+    font-size: 16px;
+  }
+}
+
+/* DESCTOP */
+
+@media only screen and (min-width: 1440px) {
+  .hero-section {
+    background-color: black;
+    background-image: url('/images/hero_desktop_bg_1x.jpg');
+    background-size: 728px;
+    background-position: left center;
+    /* background- ; */
+    width: 1440px;
+    height: 900px;
+  }
+
+  .title-hero {
+    width: 1084px;
+    height: 270px;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin: 178px 0px;
+    color: #fafafa;
+    /* text-align: justify; */
+    margin-top: 300px;
+    margin-bottom: auto;
+  }
+
+  .soc-media {
+    margin-bottom: 32px;
+    margin-left: auto;
+  }
+
+  .social-item {
+    width: 55px;
+    height: 55px;
+  }
+
+  .mail-addres {
+    width: 223px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+  }
 }
