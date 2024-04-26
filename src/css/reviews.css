@@ -46,10 +46,9 @@
 
 
 
-.reviews-li {
+.swiper-slide {
     display: flex;
-
-    width: 332px;
+    width: 320px;
     padding: 32px 24px;
     flex-direction: column;
     align-items: flex-start;
@@ -60,10 +59,16 @@
 
 
 
+
 .reviews-ul {
     display: flex;
     margin: auto;
-    gap: 16px;
+}
+
+
+.container-reviews {
+    display: block;
+
 }
 
 .button-right,
@@ -76,8 +81,4 @@
     color: #FAFAFA33;
     border-radius: 60px;
     border: 1px solid rgba(250, 250, 250, 0.20);
-}
-
-.button-arrow {
-    fill: #FAFAFA;
 }
