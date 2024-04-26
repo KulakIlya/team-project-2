@@ -4,15 +4,15 @@ body {
     padding: 0;
     background-color: #222;
     color: #fff;
-  }
+}
   
-  .container {
+.container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-  }
+}
   
-  .expand-button {
+.expand-button {
     background-color: #ff4444;
     color: #000;
     border: none;
@@ -22,22 +22,22 @@ body {
     cursor: pointer;
     margin-bottom: 20px;
     transition: background-color 0.3s ease;
-  }
+}
   
-  .expand-button:hover {
+.expand-button:hover {
     background-color: #ff6666;
-  }
+}
   
-  .expandable-content {
+.expandable-content {
     display: none;
-  }
+}
   
-  .expandable-content.active {
+.expandable-content.active {
     display: block;
-  }
+}
   
-  h2 {
+h2 {
     color: #ff4444;
     margin-bottom: 10px;
-  }
+}
   
