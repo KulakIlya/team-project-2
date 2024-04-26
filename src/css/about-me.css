@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .expand-button {
+    background-color: #ff4444;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .expand-button:hover {
+    background-color: #ff6666;
+  }
+  
+  .expandable-content {
+    display: none;
+  }
+  
+  .expandable-content.active {
+    display: block;
+  }
+  
+  h2 {
+    color: #ff4444;
+    margin-bottom: 10px;
+  }
+  
