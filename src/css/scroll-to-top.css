@@ -1,3 +1,7 @@
+body {
+  min-height: 200vh;
+}
+
 .btn-scroll-to-top {
   position: fixed;
   bottom: 20px;
