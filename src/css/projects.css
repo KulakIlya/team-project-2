@@ -259,3 +259,58 @@ body {
     border-style: none;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .projects {
+    width: 704px;
+    margin: 0 auto;
+  }
+
+  .projects-list {
+    width: 704px;
+    height: 1192px;
+  }
+
+  .projects-item1 {
+    width: 704px;
+    height: 625px;
+  }
+  .item1-content-list {
+    padding-top: 64px;
+    padding-left: 64px;
+    margin-bottom: 164px;
+  }
+  .item1-content-text-wrapper {
+    width: 496px;
+    height: 136px;
+    margin-bottom: 32px;
+  }
+  .item1-content-text {
+    font-family: Inter Tight;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.03em;
+    text-align: left;
+  }
+
+  .projects-btn {
+    width: 178px;
+    height: 56px;
+    text-align: center;
+  }
+  .projects-item2 {
+    width: 704px;
+    height: 625px;
+  }
+  .projects-item2-img {
+    padding: 120px 0;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1176px;
+  }
+}
