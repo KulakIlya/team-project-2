@@ -1,5 +1,5 @@
 import createSwiper from './swiper';
-import Swiper from 'swiper';
+
 
 
 const reviewsData = [
@@ -38,11 +38,11 @@ const reviewsData = [
 
 function generateReviewCard(review) {
     return `
-        <li class="swiper-slide">
+        <li class="reviews-li">
             <img src="${review.photo}" 
                  srcset="${review.photo} 1x,
                          ${review.photo.replace('@1x', '@2x')} 2x"
-                 alt="photo" 
+                 alt=${review.name}
                  width="48" 
                  height="48" 
                  loading="lazy">
@@ -61,29 +61,19 @@ reviewsData.forEach(review => {
 });
 
 
-
 createSwiper({
     swiperContainerClass: 'swiper',
-    slideClass: 'swiper-slide',
+    slideClass: 'reviews-li',
     navigationButtonClasses: {
-        prevEl: 'swiper-button-prev',
-        nextEl: 'swiper-button-next',
+        prevEl: 'button-left',
+        nextEl: 'button-right',
     },
-    slideActiveClass: 'swiper-slide-active',
-    disabledButtonClass: 'swiper-button-disabled',
+    slideActiveClass: 'swiper-slide-active', 
+    disabledButtonClass: 'button-left:disabled, button-right:disabled', 
     slideNextClass: 'swiper-slide-next',
     slidesPerView: { mobile: 1, tablet: 2, desktop: 4 },
-});
-
-const swiper = new Swiper('.swiper-container', {
-    slidesPerView: {
-        480: 1, 
-        768: 2, 
-        1200: 4 
-    },
    
 });
-
 
 getReviews()
     .then(reviews => {
