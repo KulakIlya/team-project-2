@@ -12,7 +12,7 @@
 }
 
 @media (min-resolution: 192dpi) {
-  .hero-section{
+  .hero-section {
     background-image: url('/images/hero_mobile_bg_2x.jpg');
   }
 }
@@ -105,7 +105,7 @@
   }
 
   @media (min-resolution: 192dpi) {
-    .hero-section{
+    .hero-section {
       background-image: url('/images/hero_tablet_bg_2x.jpg');
     }
   }
@@ -167,7 +167,7 @@
   }
 
   @media (min-resolution: 192dpi) {
-    .hero-section{
+    .hero-section {
       background-image: url('/images/hero_desktop_bg_2x.jpg');
     }
   }
