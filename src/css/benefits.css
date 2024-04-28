@@ -25,7 +25,6 @@ body {
 .item-benefits {
   display: flex;
   width: 344px;
-  /* height: 270px; */
   padding: 24px;
   flex-direction: column;
   align-items: flex-start;
@@ -57,10 +56,7 @@ body {
   align-self: stretch;
   font-style: normal;
   line-height: 24px; /* 150% */
-  /* letter-spacing: -0.32px; */
   letter-spacing: -0.02em;
-  /* font-weight: 100; */
-  /* width: 100%; */
 }
 
 .button-order-benefits {
@@ -80,7 +76,6 @@ body {
   letter-spacing: -0.32px;
   background-color: var(--black);
 }
-/* __________ */
 
 @media screen and (min-width: 768px) {
   .list-benefits {
