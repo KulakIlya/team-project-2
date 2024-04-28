@@ -1,0 +1,51 @@
+.btn-scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 50%;
+
+  background-color: transparent;
+  color: var(--white);
+  opacity: 0.5;
+
+  transition: all 250ms ease-in-out;
+}
+
+.btn-scroll-to-top:hover,
+.btn-scroll-to-top:focus {
+  opacity: 1;
+}
+
+.btn-scroll-to-top.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media screen and (min-width: 375px) {
+  .btn-scroll-to-top {
+    bottom: 30px;
+    right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn-scroll-to-top {
+    bottom: 40px;
+    right: 40px;
+  }
+}
+
+.icon-scroll-to-top {
+  fill: currentColor;
+}
