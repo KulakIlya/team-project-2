@@ -1,5 +1,5 @@
-const projectsBtn = document.querySelector(".projects-btn");
+const projectsBtn = document.querySelector('.projects-btn');
 
-projectsBtn.addEventListener("click", () => {
-    window.open("https://github.com/KulakIlya/team-project-2")
+projectsBtn.addEventListener('click', () => {
+  window.open('https://github.com/KulakIlya/team-project-2');
 });
