@@ -1,5 +1,5 @@
 import './js/about-me';
-import './js/api';
+import './js/aos';
 import './js/faq';
 import './js/footer';
 import './js/header';
