@@ -264,10 +264,22 @@
   /* 
   .open .accordion-content {
     display: block;
+<<<<<<< Updated upstream
   } */
   
   /* Styles for skills slider */
   .swiper-container {
+=======
+}
+
+@media (max-width: 767px) {
+    
+}
+
+
+/* Styles for skills slider */
+.swiper-container {
+>>>>>>> Stashed changes
     display: flex;
     overflow-x: auto;
     gap: 20px;
