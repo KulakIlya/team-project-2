@@ -1,0 +1,122 @@
+.mob-container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mob-menu.visually-hidden {
+  opacity: 0;
+  pointer-events: none;
+  right: -100%;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  padding-top: 29px;
+  background-image: url('/images/hero_mobile_bg_1x.jpg');
+  transition: right 300ms;
+}
+
+@media (min-resolution: 192dpi) {
+  .mob-menu {
+    background-image: url('/images/hero_mobile_bg_2x.jpg');
+  }
+}
+
+.top-div {
+  display: flex;
+  align-items: center;
+}
+
+.close_menu_btn {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  min-width: 24px;
+  height: 100%;
+  display: flex;
+}
+
+.icon-btn-menu {
+  width: 24px;
+  height: 24px;
+  stroke: #ffffff;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+.icon-btn-menu:hover,
+.icon-btn-menu:focus {
+  transform: scale(0.5);
+}
+
+.mob-menu-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.mob-menu-anchor {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fafafa;
+  
+  
+  padding: 2px;
+  transition: font-size 250ms, border 250ms;
+}
+
+.mob-menu-anchor:hover,
+.mob-menu-anchor:focus {
+  font-size: 18px;
+  border: 1px solid #2222;
+  border-radius: 4px;
+  
+}
+
+.order-btn-menu {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 60px;
+  padding: 18px 24px;
+  width: 163px;
+  height: 55px;
+  background: #ed3b44;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: border 250ms;
+}
+
+.order-btn-menu:hover,
+.order-btn-menu:focus{
+  border: 1px solid #fafafa;
+
+}
