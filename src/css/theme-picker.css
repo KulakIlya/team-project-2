@@ -5,10 +5,20 @@
   height: 25px;
   border: 1px solid var(--white);
   border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.theme-picker-fieldset {
+  display: flex;
+  align-items: center;
+  border: none;
+  gap: 5px;
 }
 
 :root:has(#green:checked) {
   --accent: var(--green);
+
   --mobile-hero-bg-1x: url(../images/hero_mobile_bg_green_1x.png);
   --mobile-hero-bg-2x: url(../images/hero_mobile_bg_green_2x.png);
   --tablet-hero-bg-1x: url(../images/hero_tablet_bg_green_1x.png);
@@ -61,6 +71,7 @@
 
 :root:has(#dark-orange:checked) {
   --accent: var(--dark-orange);
+
   --mobile-hero-bg-1x: url(../images/hero_mobile_bg_dark-orange_1x.png);
   --mobile-hero-bg-2x: url(../images/hero_mobile_bg_dark-orange_2x.png);
   --mobile-hero-bg-webP-1x: url(../images/hero_mobile_bg_dark-orange_1x.webp);
@@ -95,6 +106,7 @@
 
 :root:has(#dark-green:checked) {
   --accent: var(--dark-green);
+
   --mobile-hero-bg-1x: url(../images/hero_mobile_bg_dark-green_1x.png);
   --mobile-hero-bg-2x: url(../images/hero_mobile_bg_dark-green_2x.png);
   --mobile-hero-bg-webP-1x: url(../images/hero_mobile_bg_dark-green_1x.webp);
@@ -128,6 +140,7 @@
 }
 :root:has(#orange:checked) {
   --accent: var(--orange);
+
   --mobile-hero-bg-1x: url(../images/hero_mobile_bg_orange_1x.png);
   --mobile-hero-bg-2x: url(../images/hero_mobile_bg_orange_2x.png);
   --mobile-hero-bg-webP-1x: url(../images/hero_mobile_bg_orange_1x.webp);
@@ -187,35 +200,3 @@
 .theme-picker-input#orange {
   border-color: var(--orange);
 }
-
-.test {
-  /* width: 375px; */
-  height: 812px;
-}
-
-.test-overlay {
-  /* width: 311px; */
-  height: 100%;
-  background-image: var(--mobile-cover-bg-1x);
-  background-size: cover;
-  /* background-position: right 100%; */
-}
-
-@media screen and (min-width: 768px) {
-  .test-overlay {
-    background-image: var(--tablet-cover-bg-1x);
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .test-overlay {
-    background-image: var(--desktop-cover-bg-1x);
-  }
-}
-
-/* 578/812
-311/812
-
-rgba(28, 29, 32, 1)
-rgba(89, 104, 8, 1)
-rgba(198, 227, 39, 0.76) */
