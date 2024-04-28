@@ -16,11 +16,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (panel.style.display === 'block' || panel.style.display === '') {
           panel.style.display = 'none';
-        
+        this.querySelector('#icon-arrow-up').classList.add('visually-hidden');
+        this.querySelector('#icon-arrow-down').classList.remove('visually-hidden');
       } else {
-          panel.style.display = 'block';
-          
-      }
+          panel.style.display = 'block'; 
+        this.querySelector('#icon-arrow-down').classList.add('visually-hidden');
+        this.querySelector('#icon-arrow-up').classList.remove('visually-hidden');
+      } 
     });
   });
 });
