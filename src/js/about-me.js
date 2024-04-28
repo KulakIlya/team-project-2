@@ -1,14 +1,8 @@
-createSwiper({
-  swiperContainerClass: 'swiper-container',
-  slideClass: 'swiper-slide',
-  navigationButtonClasses: {
-    prevEl: 'button-left',
-    nextEl: 'button-right',
-  },
-  slideActiveClass: 'swiper-slide-active',
-  disabledButtonClass: 'button-left',
-  slideNextClass: 'swiper-slide-next',
-  slidesPerView: { mobile: 1, tablet: 2, desktop: 4 },
+createAccordion({
+  containerClass: 'accordion', // Клас контейнера аккордеона
+  elementClass: 'accordion-item', // Клас кожного елементу аккордеона
+  triggerClass: 'accordion-button', // Клас кнопки аккордеона
+  panelClass: 'accordion-content' // Клас контенту аккордеона
 });
 
 export default function createAccordion({

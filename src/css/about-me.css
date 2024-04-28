@@ -1,285 +1,219 @@
-.about-us {
-    padding-top: 64px;
-  }
-  
-  @media screen and (min-width: 1440px) {
-    .about-us {
-      padding-top: 96px;
-    }
-  }
-  
-  .about-us h2 {
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+}
+
+.is-hidden{
+    opacity: 0; 
+    visibility: none; 
+    pointer-events: none
+}
+
+
+.about-me-container {
+    padding-left: 15px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
     color: #ff4444;
     margin-bottom: 10px;
-  }
-  
-  .hidden-title {
+}
+
+.hidden-title {
     display: none;
-  }
-  
-  .image-container {
+}
+
+.image-container {
     margin-top: 10px;
     background-size: cover;
     background-position: center;
-  }
-  
-  @media screen and (min-width: 768px) {
-    .image-container {
-      margin-top: 16px;
-    }
-  }
-  
-  .description {
-    background-color: #242527;
+}
+
+.description {
+    background-color: #333;
     color: #fff;
     border-radius: 15px;
     min-height: 500px;
-  
-    padding: 32px;
-  }
-  
-  @media screen and (min-width: 768px) {
-    .description {
-      padding: 64px;
-      height: 700px;
-    }
-  }
-  
-  .description p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
     font-size: 24px;
-  
-    font-weight: 500;
-    line-height: 1.17;
-    letter-spacing: -0.72px;
-    text-transform: uppercase;
-  }
-  
-  @media screen and (min-width: 768px) {
-    .description p {
-      font-size: 38px;
-      line-height: 40px;
-    }
-  }
-  
-  .description-functional {
-    color: #ff4444;
-  }
-  
-  .description-websites {
-    color: #999;
-  }
-  
-  @media screen and (min-width: 1440px) {
-    .about-us-wrapper {
-      display: flex;
-      gap: 16px;
-      align-items: flex-start;
-    }
-  
-    .about-us-wrapper > div {
-      flex-basis: calc((100% - 16px) / 2);
-      margin: 0;
-    }
-  }
-  
-  /* Styles for mobile devices */
-  /* @media (max-width: 767px) {
-    .description {
-      background-color: #333;
-      color: #fff;
-      padding: 15px;
-      border-radius: 15px;
-      margin-right: 0;
-      height: auto;
-      width: calc(100% - 40px);
-      margin-top: 20px;
-      width: 100%;
-    }
-  
-    .description p {
-      margin: auto;
-    }
-  
-    .image-container img {
-      border-radius: 15px;
-      width: calc(100% - 40px);
-      max-width: 343px;
-      min-height: 500px;
-      background-image: url('../images/about_desktop_img_1x.jpg');
-    }
-  } */
-  
-  /* Styles for tablets */
-  /* @media (min-width: 768px) and (max-width: 1023px) {
-    .description {
-      background-color: #333;
-      color: #fff;
-      padding: 15px;
-      border-radius: 15px;
-      margin-right: 0;
-      height: auto;
-      width: calc(50% - 20px);
-      margin-top: 20px;
-      max-width: 704px;
-    }
-  
-    .description p {
-      margin: auto;
-      max-height: 120px;
-      overflow-y: auto;
-    }
-  
-    .image-container img {
-      width: calc(50% - 20px);
-      max-width: 704px;
-    }
-  }
-  */
-  /* Styles for computers */
-  /* @media (min-width: 1024px) {
-    .description {
-      background-color: #333;
-      color: #fff;
-      padding: 15px;
-      border-radius: 15px;
-      margin-right: 0;
-      height: auto;
-      margin-top: 20px;
-      max-width: 680px;
-    }
-  
-    .description p {
-      margin: auto;
-      max-height: 120px;
-      overflow-y: auto;
-    }
-  
-    .image-container img {
-      max-width: 680px;
-    }
-  } */
-  
-  /* Styles for accordion */
-  .experience {
-    margin-top: 36px;
-  }
-  
-  @media screen and (min-width: 768px) {
-    .experience {
-      margin-top: 64px;
-    }
-  }
-  
-  .accordion {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .accordion-item {
-    margin-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(250, 250, 250, 0.4);
-  }
-  
-  .accordion-button {
-    background: none;
-    cursor: pointer;
-    padding: 10px 0 12px;
-  
-    color: inherit;
-    border: none;
-    width: 100%;
-  
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  
-    text-transform: uppercase;
-  }
-  
-  @media screen and (min-width: 768px) {
-    .accordion-button {
-      padding-bottom: 10px;
-    }
-  }
-  
-  .accordion-title {
-    color: rgba(250, 250, 250, 0.4);
-  
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.5;
-    letter-spacing: -0.32px;
-  }
-  
-  .accordion-button .icon-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    padding: 9px;
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 50%;
-  }
-  
-  .accordion-button svg {
-    fill: #fafafa;
-    transition: transform 0.3s ease;
-  }
-  
-  .rotated {
-    transform: rotate(180deg);
-  }
-  
-  .accordion-item .accordion-content {
-    height: 0;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    /* z-index: 0; */
-    width: 100%;
-    max-width: 612px;
-    margin-left: auto;
-  
-    font-family: 'Inter Tight';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 150% */
-    letter-spacing: -0.32px;
-  }
-  
-  .accordion-item.is-active .accordion-content {
-    height: auto;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: all;
-  }
-  
-  @media screen and (min-width: 768px) {
-    .accordion-item .accordion-content {
-      margin-top: 8px;
-    }
-  }
-  /* 
-  .open .accordion-content {
-    display: block;
-<<<<<<< Updated upstream
-  } */
-  
-  /* Styles for skills slider */
-  .swiper-container {
-=======
+    line-height: 28px;
+    letter-spacing: -0.3px;
 }
 
+.description-functional {
+    color: #ff4444;
+}
+
+.description-websites {
+    color: #999;
+}
+
+/* Styles for mobile devices */
 @media (max-width: 767px) {
-    
+    .description {
+        background-color: #333;
+        color: #fff;
+        padding: 15px;
+        border-radius: 15px;
+        margin-right: 0;
+        height: auto;
+        width: calc(100% - 40px);
+        margin-top: 20px;
+        max-width: 343px;
+    }
+
+    .description p {
+        margin: auto;
+    }
+
+    .image-container img {
+        border-radius: 15px;
+        width: calc(100% - 40px);
+        max-width: 343px;
+        min-height: 500px;
+        background-image: url("../images/about_desktop_img_1x.jpg");
+    }
+}
+
+/* Styles for tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .description {
+        background-color: #333;
+        color: #fff;
+        padding: 15px;
+        border-radius: 15px;
+        margin-right: 0;
+        height: auto;
+        width: calc(50% - 20px);
+        margin-top: 20px;
+        max-width: 704px;
+    }
+
+    .description p {
+        margin: auto;
+        max-height: 120px;
+        overflow-y: auto;
+    }
+
+    .image-container img {
+        width: calc(50% - 20px);
+        max-width: 704px;
+    }
+}
+
+/* Styles for computers */
+@media (min-width: 1024px) {
+    .description {
+        background-color: #333;
+        color: #fff;
+        padding: 15px;
+        border-radius: 15px;
+        margin-right: 0;
+        height: auto;
+        margin-top: 20px;
+        max-width: 680px;
+    }
+
+    .description p {
+        margin: auto;
+        max-height: 120px;
+        overflow-y: auto;
+    }
+
+    .image-container img {
+        max-width: 680px;
+    }
+}
+
+/* Styles for accordion */
+.experience {
+    margin-top: 36px;
+}
+
+.accordion {
+    list-style-type: none;
+    padding: 0;
+}
+
+.accordion-item {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.accordion-item:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+    margin-top: 15px;
+    margin-left: 40px;
+    height: 1px; 
+    background-color: #666; 
+}
+
+.accordion-button {
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    color: #fff;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion-button svg {
+    width: 20px;
+    height: 20px;
+    fill: #FAFAFA;
+    transition: transform 0.3s ease;
+}
+
+.accordion-button:hover svg {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    display: none;
+    width: 100%;
+    height: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.open .accordion-content {
+    display: block;
 }
 
 
 /* Styles for skills slider */
 .swiper-container {
->>>>>>> Stashed changes
     display: flex;
     overflow-x: auto;
     gap: 20px;
@@ -287,36 +221,36 @@
     scroll-behavior: smooth;
     margin-top: 25px;
     margin-left: 25px;
-  }
-  
-  @media (max-width: 767px) {
+}
+
+@media (max-width: 767px) {
     .swiper-slide {
-      display: none;
+        display: none; 
     }
-  
-    .swiper-slide:nth-child(-n + 2) {
-      display: flex;
+
+    .swiper-slide:nth-child(-n+2) {
+        display: flex;
     }
-  }
-  
-  /* Styles for tablets */
-  @media (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Styles for tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
     .swiper-slide {
-      display: none;
+        display: none; 
     }
-  
-    .swiper-slide:nth-child(-n + 3) {
-      display: flex;
+
+    .swiper-slide:nth-child(-n+3) {
+        display: flex; 
     }
-  }
-  
-  @media (min-width: 1024px) {
+}
+
+@media (min-width: 1024px) {
     .swiper-slide {
-      display: flex;
+        display: flex; 
     }
-  }
-  
-  .swiper-slide {
+}
+
+.swiper-slide {
     background-color: #333;
     color: #fff;
     padding: 20px;
@@ -328,9 +262,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .swiper-slide-a {
+}
+
+.swiper-slide-a {
     background-color: #ff4444;
     color: #fff;
     padding: 20px;
@@ -342,9 +276,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .swiper-slide-R {
+}
+
+.swiper-slide-R {
     background-color: #333;
     color: #fff;
     padding-left: 0px;
@@ -356,20 +290,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .button-left{
-    background: none;
+}
 
-  }
+.swiper-slide-R:hover {
+    background-color: #555;
+}
 
-  .swiper-slide-R:hover {
+.swiper-slide:hover {
     background-color: #555;
-  }
-  
-  .swiper-slide:hover {
-    background-color: #555;
-  }
+}
 
   #skills {
     display: flex;
