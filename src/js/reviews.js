@@ -1,6 +1,7 @@
 import createSwiper from './swiper';
 import Swiper from 'swiper';
 
+
 const reviewsData = [
     {
         name: "Natalia",
