@@ -1,3 +1,10 @@
+.section-benefits {
+  background-color: #1c1d20;
+}
+
+body {
+  font-family: inherit;
+}
 .list-benefits {
   margin-bottom: 32px;
   display: flex;
@@ -18,6 +25,7 @@
 .item-benefits {
   display: flex;
   width: 344px;
+  /* height: 270px; */
   padding: 24px;
   flex-direction: column;
   align-items: flex-start;
@@ -28,8 +36,6 @@
 .benefits-icon {
   display: flex;
   margin-bottom: 64px;
-  width: 48px;
-  height: 48px;
   padding: 12px;
   justify-content: center;
   align-items: center;
@@ -49,12 +55,14 @@
 .description-benefits {
   color: rgba(250, 250, 250, 0.6);
   align-self: stretch;
-  /* Mobile/Main text */
   font-style: normal;
-  /* font-weight: 500; */
   line-height: 24px; /* 150% */
-  letter-spacing: -0.32px;
+  /* letter-spacing: -0.32px; */
+  letter-spacing: -0.02em;
+  /* font-weight: 100; */
+  /* width: 100%; */
 }
+
 .button-order-benefits {
   display: flex;
   padding: 18px 36px;
@@ -66,10 +74,33 @@
   border-radius: 60px;
   border: 1px solid rgba(250, 250, 250, 0.2);
   color: #fafafa;
-  /* Mobile/Btn_text */
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.32px;
   background-color: var(--black);
+}
+/* __________ */
+
+@media screen and (min-width: 768px) {
+  .list-benefits {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main-container {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 412px;
+  }
+  .container-benefits-button {
+    width: 680px;
+  }
+  .item-benefits {
+    width: 332px;
+  }
 }
