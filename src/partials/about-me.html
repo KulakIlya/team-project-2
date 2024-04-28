@@ -1,17 +1,89 @@
 <section>
-    <div id="about-me">
-        <button class="expand-button" onclick="toggleSection('about-me')">Expand About Me</button>
-        <h2>About Me</h2>
-        <div class="expandable-content" id="about-me-content" style="display: none;">
-            <p>I work with people all over the world to create impressive and functional websites that reflect each client's unique personality.</p>
+    <div class="about-me-container">
+        <div class="description">
+            <p>I work with people all over the world to create impressive and <span class="description-functional">functional</span> <span class="description-websites">websites</span> that reflect each client's unique personality.</p>
+        </div>
+        <div class="image-container">
+            <img src="../images/about_desktop_img_1x.webp" alt="">
         </div>
     </div>
+    
+    <div id="experience" class="experience">
+        <h2 class="hidden-title">Experience</h2>
+        <ul class="accordion">
+            <li class="accordion-item open">
+                <button class="accordion-button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 7.5L10 12.5L5 7.5" stroke="#FAFAFA" stroke-width="2"/>
+                    </svg>
+                </button>
 
-    <div id="education">
-        <button class="expand-button" onclick="toggleSection('education')">Expand Education</button>
-        <h2>Education</h2>
-        <div class="expandable-content" id="education-content" style="display: none;">
-            <p>Загальна інформація про освіту...</p>
-        </div>
+                <div class="accordion-content">
+                    <p>
+                        I am Lloyd Jefferson, a talented programmer with extensive expertise in software development. I have an understanding of different programming languages ​​and technologies, always ready to improve my skills. I always follow the latest trends and look for unconventional, creative solutions to problems. I have a high level of analytical skills and am able to effectively solve even the most difficult tasks encountered on the way.
+                    </p>
+                    <p>&nbsp;</p>
+                    <p>
+                        Able to work both independently and in a team. I can effectively cooperate with colleagues, exchanging ideas and finding optimal solutions. Professional maturity allows you to calmly cope with challenges and stressful situations, while maintaining a high quality of work. I am always looking for opportunities for self-improvement. I actively study new technologies and practices to stay abreast of the latest innovations. I have a strong understanding of various programming languages, frameworks and architectural concepts that allow me to create efficient and scalable software.
+                    </p>
+                </div>
+            </li>
+
+            <li class="accordion-item open">
+                <button class="accordion-button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 7.5L10 12.5L5 7.5" stroke="#FAFAFA" stroke-width="2"/>
+                    </svg>
+                </button>
+                
+                <div class="accordion-content">
+                    <p>
+                        Frontend development
+                    </p>
+                    <p>&nbsp;</p>
+                    <p>
+                        HeadlessCMS,Wordpress
+                    </p>
+                    <p>&nbsp;</p>
+                    <p>
+                        Blender(enjoy)
+                    </p>
+                </div>
+            </li>
+
+            <li class="accordion-item open">
+                <button class="accordion-button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 7.5L10 12.5L5 7.5" stroke="#FAFAFA" stroke-width="2"/>
+                    </svg>
+                </button>
+                
+                <div class="accordion-content">
+                    <p>
+                        2018 - 2019  / Frontend Development Diploma, GoIT IT School, New York
+                    </p>
+                    <p>&nbsp;</p>
+                    <p>
+                        2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York
+                    </p>
+                    <p>&nbsp;</p>
+                    <p>
+                        2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div id="skills">
+        <h2 class="hidden-title">Skills</h2>
+        <ul class="swiper-container">
+            <li class="swiper-slide-a">HTML/CSS</li>
+            <li class="swiper-slide">JavaScript</li>
+            <li class="swiper-slide">React</li>
+            <li class="swiper-slide">Node. js</li>
+            <li class="swiper-slide-R">React Native</li>
+            <li class="swiper-slide">Soft skills</li>
+        </ul>
     </div>
 </section>
