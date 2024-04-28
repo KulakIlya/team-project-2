@@ -1,5 +1,5 @@
 const scrollToTopBtn = document.querySelector('.btn-scroll-to-top');
-const firstSection = document.querySelector('.hero');
+const triggerSection = document.querySelector('.trigger-scroll-top-section');
 
 scrollToTopBtn.addEventListener('click', () => {
   window.scrollTo({
@@ -13,11 +13,11 @@ const options = {
   threshold: 1.0,
 };
 
-const observer = new IntersectionObserver((entries, observer) => {
+const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) scrollToTopBtn.classList.add('is-hidden');
     else scrollToTopBtn.classList.remove('is-hidden');
   });
 }, options);
 
-if (firstSection) observer.observe(firstSection);
+if (triggerSection) observer.observe(triggerSection);
