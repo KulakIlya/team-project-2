@@ -5,6 +5,22 @@
 .projects-swiper-wrapper {
   /* overflow: hidden;   */
 }
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #fafafa66;
+}
+
+.projects-slide-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
 
 .projects-swiper-container {
   position: relative;
@@ -19,6 +35,9 @@
 
 .projects-button {
   background-color: transparent;
+}
+.projects-slide-link {
+  text-wrap: nowrap;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -35,6 +54,17 @@
 .projects-white-side {
   background-color: #fafafa;
   padding: 32px 32px 32px 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .projects-slide-title {
+    width: 550px;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.03em;
+    text-align: left;
+  }
 }
 
 @media only screen and (min-width: 768px) {
