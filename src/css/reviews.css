@@ -1,5 +1,6 @@
 @import url('./styles.css');
 
+
 .section {
     background: #1C1D20;
 }
@@ -38,24 +39,39 @@
 
 .reviews-li {
     display: flex;
-    min-width: 320px;
+    min-width: 343px;
     padding: 32px 24px;
     flex-direction: column;
-    align-items: flex-start;
     gap: 32px;
     border-radius: 20px;
     border: 1px solid rgba(250, 250, 250, 0.20);
-    margin-right: 16px;
-    justify-content: center;
-    align-items: center;
+    margin-right: 0px;
+
 }
 
+@media screen and (min-width: 768px) {
+    .reviews-li {
+        min-width: 343px;
+        margin-right: 16px;
+        flex: 1 0 calc(50% - 8px);
+    }
 
+}
+
+@media screen and (min-width: 1440px) {
+    .reviews-li {
+        min-width: 343px;
+        margin-right: 16px;
+        flex: 1 0 calc(25% - 12px);
+    }
+
+}
 
 .reviews-ul {
     display: flex;
     margin: auto;
     margin-bottom: 32px;
+
 }
 
 

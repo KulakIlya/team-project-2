@@ -72,8 +72,11 @@ createSwiper({
     disabledButtonClass: 'button-left:disabled, button-right:disabled', 
     slideNextClass: 'swiper-slide-next',
     slidesPerView: { mobile: 1, tablet: 2, desktop: 4 },
-   
+    slidesPerView: 1,
 });
+
+
+
 
 getReviews()
     .then(reviews => {
