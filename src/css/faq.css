@@ -77,9 +77,9 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .faq-desktop {
-    width: 485px;
-  }
+    .faq-desktop {
+        width: 485px;
+    }
 }
 
 .faq-scroll-button {
@@ -103,7 +103,9 @@
 }
 
 .ac-panel {
+    display: block;
 }
+
 .faq-ac-text {
   color: rgba(250, 250, 250, 0.6);
   font-family: 'Inter Tight';
