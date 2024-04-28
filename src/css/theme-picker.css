@@ -7,6 +7,8 @@
   border-radius: 50%;
 
   cursor: pointer;
+
+  transition: all 250ms ease-in-out;
 }
 
 .theme-picker-fieldset {
@@ -138,6 +140,7 @@
   --desktop-cover-bg-webP-1x: url(../images/covers_desktop_bg_dark-green_1x.webp);
   --desktop-cover-bg-webP-2x: url(../images/covers_desktop_bg_dark-green_2x.webp);
 }
+
 :root:has(#orange:checked) {
   --accent: var(--orange);
 
