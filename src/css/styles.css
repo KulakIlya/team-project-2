@@ -7,6 +7,7 @@
 @import url('modern-normalize/modern-normalize.css');
 @import url('accordion-js/dist/accordion.min.css');
 @import url('swiper/css/bundle');
+
 @import url('aos/dist/aos.css');
 
 @import url('./reset.css');
@@ -23,3 +24,4 @@
 @import url('./reviews.css');
 @import url('./footer.css');
 @import url('./scroll-to-top.css');
+@import url('./mob-modal.css');
