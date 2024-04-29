@@ -86,24 +86,29 @@
   } */
 
   .menu-link-text {
+    display: block;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: -0.02em;
-    text-decoration-skip-ink: none;
+
     color: #fafafa;
-    transition: font-size 250ms, border 250ms;
+    transition: all 250ms ease-in-out;
   }
 
   .menu-link-text:hover,
   .menu-link-text:focus {
-  font-size: 18px;
-  border: 1px solid #2222;
-  border-radius: 4px;
-}
+    transform: scale(1.1);
+  }
 
   .menu-tab-div {
     display: block;
     margin-bottom: 15px;
+    transition: all 250ms ease-in-out;
+  }
+
+  .menu-tab-div:hover,
+  .menu-tab-div:focus {
+    transform: scale(1.1);
   }
 
   .menu-tab {
@@ -115,13 +120,6 @@
     text-decoration: underline;
 
     color: #fafafa;
-  }
-
-  .menu-tab:hover,
-  .menu-tab:focus {
-    font-size: 20px;
-    letter-spacing: -0.03em;
-    text-decoration: none;
   }
 
   .order-btn-tab {
@@ -138,11 +136,13 @@
     font-size: 14px;
     letter-spacing: -0.02em;
     color: #fafafa;
+
+    transition: all 250ms ease-in-out;
   }
 
   .order-btn-tab:hover,
   .order-btn-tab:focus {
-    border: 1px solid #fafafa;
+    background-color: #e0373f;
   }
 
   .btn-box {

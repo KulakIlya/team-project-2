@@ -337,7 +337,7 @@
   }
   .footerBtn:hover,
   .footerBtn:focus {
-    background-color: #ff4427;
+    background-color: #e0373f;
   }
 
   .emLi {
@@ -354,7 +354,7 @@
 
   .emLi:hover,
   .emLi:focus {
-    border: 1px solid #fafafa;
+    border-color: #fafafa;
   }
 
   .tfLi {
@@ -382,6 +382,7 @@
 }
 
 .status-message {
+  margin-top: 5px;
   display: block;
 }
 
