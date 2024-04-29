@@ -105,13 +105,6 @@
   padding: 2px;
   transition: font-size 250ms, border 250ms;
 }
-/* 
-.mob-menu-anchor:hover,
-.mob-menu-anchor:focus {
-  font-size: 18px;
-  border: 1px solid #2222;
-  border-radius: 4px;
-} */
 
 .order-btn-menu {
   display: block;
@@ -133,9 +126,4 @@
   left: 50%;
   transform: translate(-50%, -50%);
   transition: border 250ms;
-}
-
-.order-btn-menu:hover,
-.order-btn-menu:focus {
-  border: 1px solid #fafafa;
 }

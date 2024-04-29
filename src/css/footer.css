@@ -1,5 +1,437 @@
+.footer {
+  padding-top: 80px;
+  padding-left: 196px;
+  padding-bottom: 216px;
+  padding-right: 196px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/footer_glass_effect_mobile.png);
+  background-repeat: no-repeat;
+  background-position: left 100%;
+}
+
+.headerFooter {
+  padding-left: 10px;
+  color: var(--white);
+}
+.h2Span {
+  color: white;
+  font-size: 64px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.Jefferson-image {
+  font-size: 64px;
+}
+
+.Jefferson-img {
+  display: inline-block;
+  padding-left: 0px;
+  max-width: 350px;
+  vertical-align: middle;
+}
+.h2Work {
+  color: red;
+}
+.Jefferson-image {
+  max-width: 550px;
+  font-size: 64px;
+}
+.footerFormOne {
+  margin-top: 64px;
+}
+
+.emailInput {
+  background-color: var(--black);
+  border: none;
+  border-bottom: 1px solid #fafafa33;
+  width: 100%;
+  color: white;
+
+  height: 60px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.messageInput {
+  background-color: var(--black);
+  border: none;
+  border-bottom: 1px solid #fafafa33;
+  width: 100%;
+  color: white;
+
+  height: 60px;
+}
+
+.emailInput,
+.messageInput {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.footerBtn {
+  width: 100px;
+  height: 100px;
+  background-color: var(--red);
+
+  border-radius: 50%;
+  border: none;
+  color: var(--white);
+  margin-left: 100px;
+  transition: background-color 0.3s;
+}
+.footerBtn:hover,
+.footerBtn:focus {
+  background-color: #ff4427;
+}
+
+.emLi {
+  font-family: 'Inter Tight', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  text-align: center;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 30px;
+  padding: 10px 12px;
+  gap: 10px;
+  transition: all 250ms ease-in-out;
+}
+
+.emLi:hover,
+.emLi:focus {
+  border: 1px solid #fafafa;
+}
+
+.tfLi {
+  font-family: 'Inter Tight', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  text-align: center;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 10px 12px;
+
+  transition: all 250ms ease-in-out;
+}
+.tfLi:hover,
+.tfLi:focus {
+  border: 1px solid #fafafa;
+}
+.ulFooter {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+
+  margin-top: 64px;
+}
+
+@media screen and (min-width: 320px) {
+  .footer {
+    margin: 0;
+    padding-top: 44px;
+    padding-left: 0;
+    padding-bottom: 66px;
+    padding-right: 0;
+    max-width: auto;
+    background-image: url(../images/footer_glass_effect_mobile.png);
+    background-position: right;
+    background-size: 87px;
+    background-repeat: no-repeat;
+  }
+
+  .headerFooter {
+    color: var(--white);
+  }
+  .h2Span {
+    color: var(--white);
+  }
+  .emailForm {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .Jefferson-img {
+    display: inline-block;
+    padding-left: 0px;
+    max-width: 44px;
+    font-size: 40px;
+  }
+  .h2Work {
+    color: red;
+  }
+  .Jefferson-image {
+    max-width: 345px;
+    font-size: 40px;
+  }
+  .emailInput {
+    height: 60px;
+    margin-right: 0;
+    background: transparent;
+  }
+
+  .messageInput {
+    margin-top: 20px;
+
+    background: transparent;
+  }
+
+  .footerBtn {
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .footerFormOne {
+    display: flex;
+    flex-direction: column;
+  }
+  .emLi {
+    font-size: 14px;
+  }
+  .tfLi {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    margin: 0;
+    padding-top: 60px;
+    padding-left: 0;
+    padding-bottom: 110px;
+    padding-right: 0;
+    max-width: auto;
+    background-image: url(../images/footer_glass_effect_tablet.png);
+    background-position: right;
+    background-size: 230px;
+    background-repeat: no-repeat;
+  }
+
+  .footer-container {
+    margin: 0;
+  }
+
+  .h2Span {
+    color: white;
+  }
+  .Jefferson-img {
+    display: inline-block;
+    padding-left: 0px;
+    max-width: 64px;
+    font-size: 64px;
+
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -1.2px;
+    text-transform: uppercase;
+  }
+  .h2Work {
+    color: red;
+  }
+  .Jefferson-image {
+    max-width: 542px;
+  }
+  .emailForm {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .emailForm label {
+    flex-basis: 245px;
+  }
+
+  .footerBtn {
+    margin-top: 0;
+
+    margin-left: 0;
+    width: 150px;
+    height: 150px;
+  }
+  .footerFormOne {
+    display: flex;
+  }
+
+  .ulFooter a {
+    padding: 18px 32px;
+  }
+
+  .emLi {
+    font-size: 16px;
+  }
+  .tfLi {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding-top: 80px;
+    padding-left: 196px;
+    padding-bottom: 216px;
+    padding-right: 196px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    background-image: url(../images/footer_glass_effect_desktop.png);
+    background-position: right;
+    background-size: 420px;
+    background-repeat: no-repeat;
+  }
+
+  .footer-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .headerFooter {
+    padding-left: 10px;
+    color: var(--white);
+  }
+  .h2Span {
+    color: white;
+    font-size: 64px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .Jefferson-img {
+    display: inline-block;
+    padding-left: 0px;
+    max-width: 350px;
+    font-size: 64px;
+    line-height: 24px;
+    vertical-align: middle;
+  }
+  .h2Work {
+    color: red;
+  }
+  .Jefferson-image {
+    max-width: 550px;
+    font-size: 64px;
+  }
+  .footerFormOne {
+    padding-top: 10px;
+  }
+
+  .emailForm label {
+    flex-basis: 390px;
+  }
+
+  .footerBtn {
+    /* margin-left: 100px; */
+    transition: background-color 0.3s;
+  }
+  .footerBtn:hover,
+  .footerBtn:focus {
+    background-color: #e0373f;
+  }
+
+  .emLi {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    text-align: center;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 30px;
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  .emLi:hover,
+  .emLi:focus {
+    border-color: #fafafa;
+  }
+
+  .tfLi {
+    font-family: 'Inter Tight', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    text-align: center;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 10px 12px;
+  }
+  .tfLi:hover,
+  .tfLi:focus {
+    border: 1px solid #fafafa;
+  }
+  .ulFooter {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding-top: 60px;
+  }
+}
+
+.status-message {
+  margin-top: 5px;
+  display: block;
+}
+
+.status-message.error {
+  color: #ff0000;
+}
+
+.status-message.success {
+  color: lightgreen;
+}
+
+/* .popup {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    transition: all .2s;
+}
+    .popup--show {
+        visibility: visible;
+    }
+    .popup--show .popup__dialog {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    .popup__dialog {
+        flex-grow: 1;
+        max-width: 960px;
+        max-height: 95vh;
+        overflow: auto;
+        background-color: white;
+        border-radius: 4px;
+        padding: 0 10px;
+        transform: translateY(30px);
+        opacity: 0;
+        transition: all .2s;
+    }
+    .popup__content {
+        padding: 20px;
+    } */
+
 .backdrop {
   position: fixed;
+  z-index: 999;
   top: 0;
   left: 0;
   width: 100%;
@@ -14,7 +446,6 @@
   opacity: 0;
   pointer-events: none;
 }
-
 .modal {
   position: absolute;
   top: 50%;

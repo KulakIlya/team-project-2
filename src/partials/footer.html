@@ -1,20 +1,80 @@
-<!-- Modal window -->
-<div class="backdrop is-hidden">
-  <div class="modal">
-    <button class="modal-btn" type="modal">
-      <svg
-        class="modal-btn-icon"
-        width="22"
-        height="22"
-        aria-label="Modal close button"
+<footer class="footer" id="work-together">
+  <div class="container footer-container">
+    <div class="Jefferson-image" data-aos="fade-right">
+      <img
+        srcset="
+          ./images/footer_avatar_2x.png 2x,
+          ./images/footer_avatar_1x.png 1x
+        "
+        src="./images/footer_avatar_1x.png"
+        alt="image Jefferson"
+        width="70"
+        class="Jefferson-img"
+      />
+      <span class="h2Span"
+        >LET'S <span class="h2Work">WORK</span> TOGETHER</span
       >
-        <use href="./images/icons.svg#icon-x-close"></use>
-      </svg>
-    </button>
-    <h2 class="modal-title">Thank you for your interest in cooperation!</h2>
-    <p class="modal-captain">
-      The manager will contact you shortly to discuss further details and
-      opportunities for cooperation. Please stay in touch.
-    </p>
+    </div>
+
+    <div class="footerFormOne" data-aos="fade-up">
+      <form class="emailForm" id="emailForm">
+        <label>
+          <input
+            type="email"
+            class="emailInput"
+            id="emailInput"
+            placeholder="clients@gmail.com"
+            required
+            name="email"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          />
+          <span class="status-message"></span>
+        </label>
+        <label>
+          <input
+            class="messageInput"
+            type="text"
+            id="messageInput"
+            name="comment"
+            placeholder="comments"
+            maxlength="200"
+            required
+          />
+          <span class="status-message"></span>
+        </label>
+        <button type="submit" class="footerBtn">Send</button>
+      </form>
+    </div>
+
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-btn" type="modal">
+          <svg
+            class="modal-btn-icon"
+            width="22"
+            height="22"
+            aria-label="Modal close button"
+          >
+            <use href="./images/icons.svg#icon-x-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal-title"></h2>
+        <p class="modal-captain"></p>
+      </div>
+    </div>
+    <div class="footerFormTwo" data-aos="fade-up">
+      <ul class="ulFooter">
+        <li class="liOneFooter">
+          <a target="_blank" class="emLi" href="lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+        <li class="liTwoFooter">
+          <a target="_blank" class="tfLi" href="+380 11 1111 11 11"
+            >+380 11 1111 11 11
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
+</footer>
