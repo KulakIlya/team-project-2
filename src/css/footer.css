@@ -15,7 +15,7 @@
   color: var(--white);
 }
 .h2Span {
-  color: white;
+  color: var(--white);
   font-size: 64px;
   text-align: center;
   vertical-align: middle;
@@ -32,7 +32,7 @@
   vertical-align: middle;
 }
 .h2Work {
-  color: red;
+  color: var(--accent);
 }
 .Jefferson-image {
   max-width: 550px;
