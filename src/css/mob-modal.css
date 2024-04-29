@@ -6,27 +6,41 @@
   margin-right: auto;
 }
 
-.mob-menu.visually-hidden {
+/* .mob-menu.visually-hidden {
   opacity: 0;
   pointer-events: none;
   right: -100%;
+  transform: translateX(100%);
+  transition: all 300ms;
+} */
+
+.mob-menu.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(100%);
 }
 
 .mob-menu {
   position: fixed;
   top: 0;
-  right: 0;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+
+  transform: translateX(0);
+
   z-index: 2;
   width: 100%;
   height: 100%;
   padding-top: 29px;
-  background-image: url('/images/hero_mobile_bg_1x.jpg');
-  transition: right 300ms;
+  background-image: url('../images/hero_mobile_bg_1x.jpg');
+  transition: all 300ms;
 }
 
 @media (min-resolution: 192dpi) {
   .mob-menu {
-    background-image: url('/images/hero_mobile_bg_2x.jpg');
+    background-image: url('../images/hero_mobile_bg_2x.jpg');
   }
 }
 
@@ -79,8 +93,7 @@
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #fafafa;
-  
-  
+
   padding: 2px;
   transition: font-size 250ms, border 250ms;
 }
@@ -90,7 +103,6 @@
   font-size: 18px;
   border: 1px solid #2222;
   border-radius: 4px;
-  
 }
 
 .order-btn-menu {
@@ -116,7 +128,6 @@
 }
 
 .order-btn-menu:hover,
-.order-btn-menu:focus{
+.order-btn-menu:focus {
   border: 1px solid #fafafa;
-
 }
