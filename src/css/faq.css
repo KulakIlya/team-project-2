@@ -78,29 +78,10 @@
   .faq-list {
     display: flex;
   }
-<<<<<<< Updated upstream
-  .column-1 {
-    flex: 1;
-  }
-
-  .column-2 {
-    border-left: 1px solid rgba(250, 250, 250, 0.2);
-  }
-
-  .faq-item {
-    padding-bottom: 26px;
-    padding-right: 32px;
-  }
-  .column-2 > .faq-item {
-    padding-left: 32px;
-    padding-right: 0;
-  }
-=======
   .faq-scroll-button {
     /* padding-bottom: 26px; */
     padding-right: 32px;
   }
->>>>>>> Stashed changes
 }
 
 /* .acc {
@@ -121,22 +102,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-<<<<<<< Updated upstream
-  .faq-item-title {
-    padding-bottom: 26px;
-  }
-
-  .faq-tablet {
-    min-width: 574px;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .faq-desktop {
-    width: 485px;
-  }
-}
-=======
   .faq-item {
     padding-bottom: 24px;
   }
@@ -149,7 +114,6 @@
   .faq-item {
     padding-bottom: 26px;
   }
->>>>>>> Stashed changes
 
   .faq-desktop {
     width: 485px;
@@ -187,8 +151,7 @@
   display: block;
 } */
 
->>>>>>> Stashed changes
-.faq-ac-text {
+>>>>>>>Stashed changes .faq-ac-text {
   color: rgba(250, 250, 250, 0.6);
 
   font-size: 16px;
@@ -199,23 +162,15 @@
 }
 
 @media only screen and (min-width: 768px) {
-<<<<<<< Updated upstream
-  .faq-ac-text {
-    width: 656px;
-  }
-=======
   /* .faq-ac-text {
     width: 656px;
   } */
->>>>>>> Stashed changes
 }
 
 @media only screen and (min-width: 1440px) {
   .faq-ac-text {
     padding-bottom: 0;
   }
-<<<<<<< Updated upstream
-=======
 
   .faq-item-title {
     font-size: 18px;
@@ -233,5 +188,4 @@
     padding-left: 32px;
     border-left: 1px solid rgba(250, 250, 250, 0.2);
   }
->>>>>>> Stashed changes
 }

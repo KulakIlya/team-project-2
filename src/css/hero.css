@@ -176,17 +176,7 @@
     height: 900px;
   }
 
-<<<<<<< Updated upstream
-  @media (min-resolution: 192dpi) {
-=======
-  <<<<<<< HEAD @media (min-resolution: 192dpi) {
->>>>>>> Stashed changes
-    .hero-section {
-      background-image: url('/images/hero_desktop_bg_2x.jpg');
-    }
-  }
-
-  =======>>>>>>>main .title-hero {
+ .title-hero {
     width: 1084px;
     height: 270px;
     font-family: 'Inter Tight', sans-serif;
