@@ -181,6 +181,7 @@
   }
 }
 .aboutme-swiper-container {
+  margin-top: 32px;
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -246,6 +247,9 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .aboutme-swiper-container {
+    margin-top: 64px;
+  }
   .aboutme-swiper {
     width: 600px;
     /* margin-right: 64px; */
@@ -269,9 +273,11 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  /* .swiper, */
+  .aboutme-swiper-container {
+    margin-top: 64px;
+  }
+
   .aboutme-swiper {
-    /* width: 1364px; */
     width: 1200px;
     margin-right: 72px;
   }
@@ -280,10 +286,6 @@
   }
 }
 
-/* .swiper {
-  width: 1312px;
-  height: 200px;
-} */
 .swiper-button-lock {
   display: flex !important;
 }
