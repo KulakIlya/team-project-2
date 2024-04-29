@@ -1,6 +1,11 @@
-.header-section {
-  /* height: 80px; */
+.header {
+  padding-top: 32px;
+  width: 100vw;
+  position: absolute;
+  height: auto;
+}
 
+.header-section {
   border: none;
   display: flex;
   align-items: flex-start;
@@ -21,9 +26,20 @@
 }
 
 .menu-list {
-  display: none;
+  opacity: 1;
+  height: auto;
+  visibility: visible;
+  pointer-events: all;
+
+  transition: all 250ms ease-in-out;
 }
 
+.menu-list.is-hidden {
+  opacity: 0;
+  height: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 .order-btn-tab {
   display: none;
 }
