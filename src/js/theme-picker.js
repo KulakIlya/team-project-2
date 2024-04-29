@@ -1,10 +1,12 @@
-const themePicker = document.querySelector('.theme-picker-form');
-const formInputs = themePicker?.elements;
+const themePicker = document.querySelectorAll('.theme-picker-form');
 
-const storedTheme = localStorage.getItem('picked-theme') ?? 'red';
+themePicker.forEach(item => {
+  const formInputs = item?.elements;
+  const storedTheme = localStorage.getItem('picked-theme') ?? 'red';
 
-if (formInputs) formInputs[storedTheme].checked = true;
+  if (formInputs) formInputs[storedTheme].checked = true;
 
-themePicker?.addEventListener('change', e => {
-  localStorage.setItem('picked-theme', e.target.value);
+  item?.addEventListener('change', e => {
+    localStorage.setItem('picked-theme', e.target.value);
+  });
 });

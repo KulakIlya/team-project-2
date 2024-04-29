@@ -1,3 +1,13 @@
+.theme-picker-fieldset {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  border: none;
+  gap: 5px;
+  background-color: var(--black);
+  border-radius: 50px;
+}
+
 .theme-picker-input {
   appearance: none;
 
@@ -11,29 +21,38 @@
   transition: all 250ms ease-in-out;
 }
 
-.theme-picker-fieldset {
-  display: flex;
-  align-items: center;
-  border: none;
-  gap: 5px;
-}
-
 :root:has(#green:checked) {
   --accent: var(--green);
 
   --mobile-hero-bg-1x: url(../images/hero_mobile_bg_green_1x.png);
   --mobile-hero-bg-2x: url(../images/hero_mobile_bg_green_2x.png);
+  --mobile-hero-bg-webP-1x: url(../images/hero_mobile_bg_green_1x.webp);
+  --mobile-hero-bg-webP-2x: url(../images/hero_mobile_bg_green_2x.webp);
+
   --tablet-hero-bg-1x: url(../images/hero_tablet_bg_green_1x.png);
   --tablet-hero-bg-2x: url(../images/hero_tablet_bg_green_2x.png);
+  --tablet-hero-bg-webP-1x: url(../images/hero_tablet_bg_green_1x.webp);
+  --tablet-hero-bg-webP-2x: url(../images/hero_tablet_bg_green_2x.webp);
+
   --desktop-hero-bg-1x: url(../images/hero_desktop_bg_green_1x.png);
   --desktop-hero-bg-2x: url(../images/hero_desktop_bg_green_2x.png);
+  --desktop-hero-bg-webP-1x: url(../images/hero_desktop_bg_green_1x.webp);
+  --desktop-hero-bg-webP-2x: url(../images/hero_desktop_bg_green_2x.webp);
 
   --mobile-cover-bg-1x: url(../images/covers_mobile_bg_green_1x.png);
   --mobile-cover-bg-2x: url(../images/covers_mobile_bg_green_2x.png);
+  --mobile-cover-bg-webP-1x: url(../images/covers_mobile_bg_green_1x.webp);
+  --mobile-cover-bg-webP-2x: url(../images/covers_mobile_bg_green_2x.webp);
+
   --tablet-cover-bg-1x: url(../images/covers_tablet_bg_green_1x.png);
   --tablet-cover-bg-2x: url(../images/covers_tablet_bg_green_2x.png);
+  --tablet-cover-bg-webP-1x: url(../images/covers_tablet_bg_green_1x.webp);
+  --tablet-cover-bg-webP-2x: url(../images/covers_tablet_bg_green_2x.webp);
+
   --desktop-cover-bg-1x: url(../images/covers_desktop_bg_green_1x.png);
   --desktop-cover-bg-2x: url(../images/covers_desktop_bg_green_2x.png);
+  --desktop-cover-bg-webP-1x: url(../images/covers_desktop_bg_green_1x.webp);
+  --desktop-cover-bg-webP-2x: url(../images/covers_desktop_bg_green_2x.webp);
 }
 
 :root:has(#blue:checked) {
@@ -42,7 +61,7 @@
   --mobile-hero-bg-1x: url(../images/hero_mobile_bg_blue_1x.png);
   --mobile-hero-bg-2x: url(../images/hero_mobile_bg_blue_2x.png);
   --mobile-hero-bg-webP-1x: url(../images/hero_mobile_bg_blue_1x.webp);
-  --mobile-hero-bg-webP2x: url(../images/hero_mobile_bg_blue_2x.webp);
+  --mobile-hero-bg-webP-2x: url(../images/hero_mobile_bg_blue_2x.webp);
 
   --tablet-hero-bg-1x: url(../images/hero_tablet_bg_blue_1x.png);
   --tablet-hero-bg-2x: url(../images/hero_tablet_bg_blue_2x.png);
@@ -77,7 +96,7 @@
   --mobile-hero-bg-1x: url(../images/hero_mobile_bg_dark-orange_1x.png);
   --mobile-hero-bg-2x: url(../images/hero_mobile_bg_dark-orange_2x.png);
   --mobile-hero-bg-webP-1x: url(../images/hero_mobile_bg_dark-orange_1x.webp);
-  --mobile-hero-bg-webP2x: url(../images/hero_mobile_bg_dark-orange_2x.webp);
+  --mobile-hero-bg-webP-2x: url(../images/hero_mobile_bg_dark-orange_2x.webp);
 
   --tablet-hero-bg-1x: url(../images/hero_tablet_bg_dark-orange_1x.png);
   --tablet-hero-bg-2x: url(../images/hero_tablet_bg_dark-orange_2x.png);
@@ -112,7 +131,7 @@
   --mobile-hero-bg-1x: url(../images/hero_mobile_bg_dark-green_1x.png);
   --mobile-hero-bg-2x: url(../images/hero_mobile_bg_dark-green_2x.png);
   --mobile-hero-bg-webP-1x: url(../images/hero_mobile_bg_dark-green_1x.webp);
-  --mobile-hero-bg-webP2x: url(../images/hero_mobile_bg_dark-green_2x.webp);
+  --mobile-hero-bg-webP-2x: url(../images/hero_mobile_bg_dark-green_2x.webp);
 
   --tablet-hero-bg-1x: url(../images/hero_tablet_bg_dark-green_1x.png);
   --tablet-hero-bg-2x: url(../images/hero_tablet_bg_dark-green_2x.png);
@@ -146,8 +165,8 @@
 
   --mobile-hero-bg-1x: url(../images/hero_mobile_bg_orange_1x.png);
   --mobile-hero-bg-2x: url(../images/hero_mobile_bg_orange_2x.png);
-  --mobile-hero-bg-webP-1x: url(../images/hero_mobile_bg_orange_1x.webp);
-  --mobile-hero-bg-webP2x: url(../images/hero_mobile_bg_orange_2x.webp);
+  --mobile-hero-bg-webP-1x: url(../images/hero_mobile_bg_orange_1x.png);
+  --mobile-hero-bg-webP-2x: url(../images/hero_mobile_bg_orange_2x.png);
 
   --tablet-hero-bg-1x: url(../images/hero_tablet_bg_orange_1x.png);
   --tablet-hero-bg-2x: url(../images/hero_tablet_bg_orange_2x.png);

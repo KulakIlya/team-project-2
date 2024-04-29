@@ -43,7 +43,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  background: #ed3b44;
+  background: var(--accent);
 }
 .title-list-benefits {
   margin-bottom: 8px;

@@ -1,16 +1,11 @@
 @media screen and (max-width: 375px) and (min-resolution: 192dpi) {
   .hero-section {
-    background-image: url('../images/hero_mobile_bg_2x.jpg');
+    background-image: var(--mobile-hero-bg-webP-2x);
   }
 }
 
 .hero-section {
-<<<<<<< HEAD
-  padding-bottom: 32px;
-  background-image: var(--mobile-hero-bg-1x);
-=======
-  background-image: url('../images/hero_mobile_bg_1x.jpg');
->>>>>>> main
+  background-image: var(--mobile-hero-bg-webP-1x);
   background-repeat: no-repeat;
   /* background-size: cover; */
   min-width: 320px;
@@ -22,15 +17,6 @@
   flex-direction: column;
 }
 
-<<<<<<< HEAD
-@media (min-resolution: 192dpi) {
-  .hero-section {
-    background-image: var(--mobile-hero-bg-2x);
-  }
-}
-
-=======
->>>>>>> main
 .title-hero {
   text-align: start;
   min-width: 100%;
@@ -126,24 +112,11 @@
 
 @media screen and (min-width: 768px) {
   .hero-section {
-<<<<<<< HEAD
-    background-image: var(--tablet-hero-bg-1x);
-=======
-    background-image: url('../images/hero_tablet_bg_1x.jpg');
->>>>>>> main
+    background-image: var(--tablet-hero-bg-webP-1x);
     width: 100%;
     height: 1024px;
   }
 
-<<<<<<< HEAD
-  @media (min-resolution: 192dpi) {
-    .hero-section {
-      background-image: var(--tablet-hero-bg-2x);
-    }
-  }
-
-=======
->>>>>>> main
   .title-hero {
     width: 632px;
     height: 450px;
@@ -192,7 +165,7 @@
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero-section {
-    background-image: url('../images/hero_tablet_bg_2x.jpg');
+    background-image: var(--tablet-hero-bg-webP-2x);
   }
 }
 
@@ -200,22 +173,13 @@
 
 @media screen and (min-width: 1440px) {
   .hero-section {
-    background-image: url('../images/hero_desktop_bg_1x.jpg');
+    background-image: var(--desktop-hero-bg-webP-1x);
     background-size: 728px;
     background-position: left center;
     width: 1440px;
     height: 900px;
   }
 
-<<<<<<< HEAD
-  @media (min-resolution: 192dpi) {
-    .hero-section {
-      background-image: var(--desktop-hero-bg-2x);
-    }
-  }
-
-=======
->>>>>>> main
   .title-hero {
     width: 1084px;
     height: 270px;
@@ -255,6 +219,6 @@
 
 @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
   .hero-section {
-    background-image: url('../images/hero_desktop_bg_2x.jpg');
+    background-image: var(--desktop-hero-bg-webP-2x);
   }
 }

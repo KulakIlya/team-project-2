@@ -10,7 +10,7 @@ scrollToTopBtn.addEventListener('click', () => {
 
 const options = {
   rootMargin: '0px',
-  threshold: 1.0,
+  threshold: 0,
 };
 
 const observer = new IntersectionObserver(entries => {

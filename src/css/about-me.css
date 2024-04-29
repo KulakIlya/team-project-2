@@ -9,7 +9,7 @@
 }
 
 .about-us h2 {
-  color: #ff4444;
+  color: var(--accent);
   margin-bottom: 10px;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .description-functional {
-  color: #ff4444;
+  color: var(--accent);
 }
 
 .description-websites {
@@ -77,83 +77,6 @@
     margin: 0;
   }
 }
-
-/* Styles for mobile devices */
-/* @media (max-width: 767px) {
-  .description {
-    background-color: #333;
-    color: #fff;
-    padding: 15px;
-    border-radius: 15px;
-    margin-right: 0;
-    height: auto;
-    width: calc(100% - 40px);
-    margin-top: 20px;
-    width: 100%;
-  }
-
-  .description p {
-    margin: auto;
-  }
-
-  .image-container img {
-    border-radius: 15px;
-    width: calc(100% - 40px);
-    max-width: 343px;
-    min-height: 500px;
-    background-image: url('../images/about_desktop_img_1x.jpg');
-  }
-} */
-
-/* Styles for tablets */
-/* @media (min-width: 768px) and (max-width: 1023px) {
-  .description {
-    background-color: #333;
-    color: #fff;
-    padding: 15px;
-    border-radius: 15px;
-    margin-right: 0;
-    height: auto;
-    width: calc(50% - 20px);
-    margin-top: 20px;
-    max-width: 704px;
-  }
-
-  .description p {
-    margin: auto;
-    max-height: 120px;
-    overflow-y: auto;
-  }
-
-  .image-container img {
-    width: calc(50% - 20px);
-    max-width: 704px;
-  }
-}
-*/
-/* Styles for computers */
-/* @media (min-width: 1024px) {
-  .description {
-    background-color: #333;
-    color: #fff;
-    padding: 15px;
-    border-radius: 15px;
-    margin-right: 0;
-    height: auto;
-    margin-top: 20px;
-    max-width: 680px;
-  }
-
-  .description p {
-    margin: auto;
-    max-height: 120px;
-    overflow-y: auto;
-  }
-
-  .image-container img {
-    max-width: 680px;
-  }
-} */
 
 /* Styles for accordion */
 .experience {
@@ -287,19 +210,6 @@
   max-width: 130px;
 }
 
-/*
- .aboutme-swiper-wrapper:last-child {
-  visibility: hidden;
-  width: 0;
-}
- */
-/* .swiper-slide, */
-/*
- .aboutme-swiper-slide {
-  width: 130px;
-  height: 130px;
-}
- */
 .aboutme-slide {
   width: 130px;
   height: 130px;
@@ -322,7 +232,7 @@
 }
 
 .swiper-slide-active > .aboutme-slide {
-  background-color: #ed3b44;
+  background-color: var(--accent);
 }
 
 .aboutme-slide-next {
