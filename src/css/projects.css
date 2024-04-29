@@ -270,11 +270,6 @@
   }
 }
 
-/* .swiper-button-disabled {
-  stroke: #3b3b3b;
-} */
-
 .projects-button:disabled .projects-button-icon {
   stroke: #3b3b3b;
-  /* fill: black; */
 }
