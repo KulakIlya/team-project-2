@@ -6,3 +6,4 @@ import './js/header';
 import './js/projects';
 import './js/reviews';
 import './js/scroll-to-top';
+import './js/mob-modal';
