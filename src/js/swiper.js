@@ -1,4 +1,6 @@
 import Swiper from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 import { Navigation } from 'swiper/modules';
 
@@ -15,6 +17,7 @@ import { Navigation } from 'swiper/modules';
 export default function createSwiper({
   swiperContainerClass,
   navigationButtons: { prevEl, nextEl },
+  spaceBetween = 30,
 }) {
   return new Swiper(`.${swiperContainerClass}`, {
     // Install modules
@@ -24,5 +27,6 @@ export default function createSwiper({
       nextEl: `.${nextEl}`,
       prevEl: `.${prevEl}`,
     },
+    spaceBetween,
   });
 }

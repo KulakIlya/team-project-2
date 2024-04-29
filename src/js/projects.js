@@ -5,5 +5,6 @@ const swiper = createSwiper({
   navigationButtons: {
     prevEl: 'projects-button-prev',
     nextEl: 'projects-button-next',
-  }
+  },
+  spaceBetween: 200,
 });

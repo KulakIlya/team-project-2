@@ -14,6 +14,11 @@
   font-display: swap;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Inter Tight', sans-serif;
   font-size: 16px;

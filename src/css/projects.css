@@ -1,10 +1,6 @@
-.projects-section {
+/* .projects-swiper-wrapper {
   overflow: hidden;
-}
-
-.projects-swiper-wrapper {
-  /* overflow: hidden;   */
-}
+} */
 .section-title {
   font-size: 16px;
   font-weight: 600;
@@ -274,6 +270,11 @@
   }
 }
 
-.swiper-button-disabled {
+/* .swiper-button-disabled {
   stroke: #3b3b3b;
+} */
+
+.projects-button:disabled .projects-button-icon {
+  stroke: #3b3b3b;
+  /* fill: black; */
 }
