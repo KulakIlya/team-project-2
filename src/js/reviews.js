@@ -27,6 +27,7 @@ const swiper = createSwiper({
   },
   slidesPerView: { mobile: 1, tablet: 2, desktop: 3 },
   spaceBetween: 20,
+  loop: false,
 });
 
 getReviews()

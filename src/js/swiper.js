@@ -2,7 +2,7 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import { Manipulation, Navigation } from 'swiper/modules';
+import { Keyboard, Manipulation, Navigation } from 'swiper/modules';
 
 /**
  * initializes swiper instance
@@ -24,10 +24,14 @@ export default function createSwiper({
   navigationButtons: { prevEl, nextEl },
   spaceBetween = 30,
   slidesPerView = { mobile: 1, tablet: 1, desktop: 1 },
+  ...otherOptions
 }) {
   return new Swiper(`.${swiperContainerClass}`, {
-    // Install modules
-    modules: [Navigation, Manipulation],
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+    modules: [Navigation, Manipulation, Keyboard],
     direction: 'horizontal',
     speed: 500,
     navigation: {
@@ -39,13 +43,16 @@ export default function createSwiper({
     breakpoints: {
       768: {
         slidesPerView: slidesPerView.tablet,
-        spaceBetween: slidesPerView.tablet !== 1 ? 16 : spaceBetween,
+        spaceBetween:
+          slidesPerView.tablet !== 1 && spaceBetween != 0 ? 16 : spaceBetween,
       },
 
       1440: {
         slidesPerView: slidesPerView.desktop,
-        spaceBetween: slidesPerView.tablet !== 1 ? 16 : spaceBetween,
+        spaceBetween:
+          slidesPerView.tablet !== 1 && spaceBetween != 0 ? 16 : spaceBetween,
       },
     },
+    ...otherOptions,
   });
 }
