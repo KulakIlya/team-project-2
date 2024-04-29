@@ -1,0 +1,61 @@
+<header class="header">
+  <div class="header-section container">
+    <nav class="header-nav">
+      <a class="main-logo link" href="./index.html">
+        <div class="logo_box">
+          <picture>
+            <source
+              srcset="./images/logo_1x.png 1x, ./images/logo_2x.png 2x"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="./images/logo_1x.webp 1x, ./images/logo_2x.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <img src="./images/logo_1x.png" alt="logo" class="logo_image" />
+          </picture>
+        </div>
+      </a>
+    </nav>
+
+    <div class="menu-box-list">
+      <div class="menu-tab-div">
+        <button class="menu-tab">Menu</button>
+      </div>
+
+      <ul class="menu-list is-hidden">
+        <li class="menu-list-item">
+          <a class="menu-link-text" href="#">About me</a>
+        </li>
+        <li class="menu-list-item">
+          <a class="menu-link-text" href="#">Benefits</a>
+        </li>
+        <li class="menu-list-item">
+          <a class="menu-link-text" href="#">Projects</a>
+        </li>
+        <li class="menu-list-item">
+          <a class="menu-link-text" href="#">FAQ</a>
+        </li>
+      </ul>
+    </div>
+    <button class="order-btn-tab">Order the project</button>
+    <!-- <address class="header-contact">
+      <a class="item-contact link" href="tel:+380684439426">
+        +380 (68) 443-94-26
+      </a>
+    </address> -->
+
+    <div class="btn-box">
+      <button
+        class="menu-mob-btn"
+        aria-label="menu burger button"
+        data-menu-open
+        type="button"
+      >
+        <svg class="icon_burger">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,131 @@
+.header {
+  padding-top: 32px;
+  width: 100vw;
+  position: absolute;
+  height: auto;
+}
+
+.header-section {
+  border: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+}
+
+.logo_box {
+  width: 172px;
+  height: 80px;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.menu-tab-div {
+  display: none;
+}
+
+.menu-list {
+  opacity: 1;
+  height: auto;
+  visibility: visible;
+  pointer-events: all;
+
+  transition: all 250ms ease-in-out;
+}
+
+.menu-list.is-hidden {
+  opacity: 0;
+  height: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.order-btn-tab {
+  display: none;
+}
+
+.btn-box {
+  margin-left: auto;
+}
+.menu-mob-btn {
+  display: flex;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon_burger {
+  width: 28px;
+  height: 28px;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+  .header-section {
+    justify-content: space-between;
+  }
+
+  .menu-box-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* .menu-list-item {
+    
+  } */
+
+  .menu-link-text {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration-skip-ink: none;
+    color: #fafafa;
+  }
+
+  .menu-tab-div {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .menu-tab {
+    background-color: transparent;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+
+    color: #fafafa;
+  }
+
+  .order-btn-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 60px;
+    padding: 18px 24px;
+    width: 163px;
+    height: 55px;
+    background: #ed3b44;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+  }
+
+  .btn-box {
+    display: none;
+  }
+}

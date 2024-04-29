@@ -1,5 +1,10 @@
-const projectsBtn = document.querySelector(".projects-btn");
+import createSwiper from './swiper';
 
-projectsBtn.addEventListener("click", () => {
-    window.open("https://github.com/KulakIlya/team-project-2")
+const swiper = createSwiper({
+  swiperContainerClass: 'swiper-container',
+  navigationButtons: {
+    prevEl: 'projects-button-prev',
+    nextEl: 'projects-button-next',
+  },
+  spaceBetween: 200,
 });
