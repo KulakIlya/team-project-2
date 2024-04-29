@@ -1,28 +1,18 @@
 import createAccordion from './accordion';
 
-document.addEventListener('DOMContentLoaded', function () {
-  createAccordion({
-    containerClass: 'faq-list',
-    elementClass: 'faq-item',
-    triggerClass: 'faq-scroll-button',
-    panelClass: 'ac-panel',
-  });
+createAccordion({
+  containerClass: 'faq-list',
+  elementClass: 'faq-item',
+  triggerClass: 'faq-scroll-button',
+  panelClass: 'acc-panel',
+});
 
-  const triggers = document.querySelectorAll('.faq-scroll-button');
+const faqList = document.querySelector('.faq-list');
 
-  triggers.forEach(function (trigger) {
-    trigger.addEventListener('click', function () {
-        const panel = this.closest('.faq-item').querySelector('.ac-panel');
+faqList.addEventListener('click', e => {
+  const closest = e.target.closest('.faq-item');
 
-      if (panel.style.display === 'block' || panel.style.display === '') {
-          panel.style.display = 'none';
-        this.querySelector('#icon-arrow-up').classList.add('visually-hidden');
-        this.querySelector('#icon-arrow-down').classList.remove('visually-hidden');
-      } else {
-          panel.style.display = 'block'; 
-        this.querySelector('#icon-arrow-down').classList.add('visually-hidden');
-        this.querySelector('#icon-arrow-up').classList.remove('visually-hidden');
-      } 
-    });
-  });
+  if (!closest) return;
+
+  closest.querySelector('#icon-arrow-down').classList.toggle('rotated');
 });
