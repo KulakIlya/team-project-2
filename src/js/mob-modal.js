@@ -1,6 +1,8 @@
 const openModalBtn = document.querySelector('.menu-mob-btn');
 const closeModalBtn = document.querySelector('.close_menu_btn');
 const listMenuItem = document.querySelector('.mob-menu-list');
+const btnOrder = document.querySelector('.order-btn-menu');
+console.log(btnOrder)
 
 const modal = document.querySelector('[data-modal]');
 
@@ -19,3 +21,11 @@ listMenuItem.querySelectorAll('a').forEach(link => {
     modal.classList.add('is-hidden');
   });
 });
+
+
+btnOrder.addEventListener("click", orderBtnAncor);
+function orderBtnAncor (event){
+  if(event.currentTarget === btnOrder) {
+    modal.classList.add('is-hidden');
+  } return;
+};

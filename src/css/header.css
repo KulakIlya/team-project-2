@@ -113,7 +113,15 @@
     letter-spacing: -0.02em;
     text-decoration-skip-ink: none;
     color: #fafafa;
+    transition: font-size 250ms, border 250ms;
   }
+
+  .menu-link-text:hover,
+  .menu-link-text:focus {
+  font-size: 18px;
+  border: 1px solid #2222;
+  border-radius: 4px;
+}
 
   .menu-tab-div {
     display: block;
@@ -131,6 +139,13 @@
     color: #fafafa;
   }
 
+  .menu-tab:hover,
+  .menu-tab:focus {
+    font-size: 20px;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+  }
+
   .order-btn-tab {
     display: flex;
     align-items: center;
@@ -145,6 +160,11 @@
     font-size: 14px;
     letter-spacing: -0.02em;
     color: #fafafa;
+  }
+
+  .order-btn-tab:hover,
+  .order-btn-tab:focus {
+    border: 1px solid #fafafa;
   }
 
   .btn-box {
