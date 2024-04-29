@@ -1,7 +1,9 @@
 import './js/about-me';
-import './js/api';
+import './js/aos';
 import './js/faq';
 import './js/footer';
 import './js/header';
 import './js/projects';
 import './js/reviews';
+import './js/scroll-to-top';
+import './js/mob-modal';
