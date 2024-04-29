@@ -148,7 +148,7 @@
   height: 45px;
   padding: 13px 32px;
   border-radius: 60px;
-  background: #ed3b44;
+  background: var(--accent);
   color: #fafafa;
   letter-spacing: -0.02em;
 }

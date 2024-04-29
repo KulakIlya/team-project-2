@@ -12,6 +12,7 @@ modal.addEventListener('click', e => {
   if (!closest && !e.target.classList.contains('backdrop')) return;
 
   modal.classList.add('is-hidden');
+  document.body.classList.add('.modal-open');
 });
 
 window.addEventListener('keyup', onKeyup);
@@ -27,6 +28,8 @@ function onInput(e) {
 async function onSubmit(e) {
   e.preventDefault();
 
+  document.body.classList.add('modal-open');
+
   const formData = new FormData(e.target);
   const dataToSend = {};
   formData.forEach((item, index) => (dataToSend[index] = item));
@@ -40,7 +43,10 @@ async function onSubmit(e) {
 }
 
 function onKeyup(e) {
-  if (e.key === 'Escape') modal.classList.add('is-hidden');
+  if (e.key === 'Escape') {
+    modal.classList.add('is-hidden');
+    document.body.classList.add('modal-open');
+  }
 }
 
 function showError(ref, inputName) {

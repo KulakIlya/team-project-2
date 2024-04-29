@@ -4,4 +4,42 @@
   --grey: #3b3b3b;
   --red: #ed3b44;
   --white: #fafafa;
+  --green: #c6e327;
+  --blue: #0041e8;
+  --dark-orange: #e6533c;
+  --dark-green: #2b4441;
+  --orange: #ff7f08;
+
+  --accent: #ed3b44;
+
+  --mobile-hero-bg-1x: url(../images/hero_mobile_bg_red_1x.png);
+  --mobile-hero-bg-2x: url(../images/hero_mobile_bg_red_2x.png);
+  --mobile-hero-bg-webP-1x: url(../images/hero_mobile_bg_red_1x.webp);
+  --mobile-hero-bg-webP-2x: url(../images/hero_mobile_bg_red_2x.webp);
+
+  --tablet-hero-bg-1x: url(../images/hero_tablet_bg_red_1x.png);
+  --tablet-hero-bg-2x: url(../images/hero_tablet_bg_red_2x.png);
+  --tablet-hero-bg-webP-1x: url(../images/hero_tablet_bg_red_1x.webp);
+  --tablet-hero-bg-webP-2x: url(../images/hero_tablet_bg_red_2x.webp);
+
+  --desktop-hero-bg-1x: url(../images/hero_desktop_bg_red_1x.png);
+  --desktop-hero-bg-2x: url(../images/hero_desktop_bg_red_2x.png);
+  --desktop-hero-bg-webP-1x: url(../images/hero_desktop_bg_red_1x.webp);
+  --desktop-hero-bg-webP-2x: url(../images/hero_desktop_bg_red_2x.webp);
+
+  --mobile-cover-bg-1x: url(../images/covers_mobile_bg_red_1x.png);
+  --mobile-cover-bg-2x: url(../images/covers_mobile_bg_red_2x.png);
+  --mobile-cover-bg-webP-1x: url(../images/covers_mobile_bg_red_1x.webp);
+  --mobile-cover-bg-webP-2x: url(../images/covers_mobile_bg_red_2x.webp);
+
+  --tablet-cover-bg-1x: url(../images/covers_tablet_bg_red_1x.png);
+  --tablet-cover-bg-2x: url(../images/covers_tablet_bg_red_2x.png);
+
+  --tablet-cover-bg-webP-1x: url(../images/covers_tablet_bg_red_1x.webp);
+  --tablet-cover-bg-webP-2x: url(../images/covers_tablet_bg_red_2x.webp);
+
+  --desktop-cover-bg-1x: url(../images/covers_desktop_bg_red_1x.png);
+  --desktop-cover-bg-2x: url(../images/covers_desktop_bg_red_2x.png);
+  --desktop-cover-bg-webP-1x: url(../images/covers_desktop_bg_red_1x.webp);
+  --desktop-cover-bg-webP-2x: url(../images/covers_desktop_bg_red_2x.webp);
 }
