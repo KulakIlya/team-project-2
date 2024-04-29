@@ -1,5 +1,4 @@
 import Swiper from 'swiper';
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -34,6 +33,19 @@ export default function createSwiper({
     navigation: {
       nextEl: `.${nextEl}`,
       prevEl: `.${prevEl}`,
+    },
+    spaceBetween,
+    slidesPerView: slidesPerView.mobile,
+    breakpoints: {
+      768: {
+        slidesPerView: slidesPerView.tablet,
+        spaceBetween: slidesPerView.tablet !== 1 ? 16 : spaceBetween,
+      },
+
+      1440: {
+        slidesPerView: slidesPerView.desktop,
+        spaceBetween: slidesPerView.tablet !== 1 ? 16 : spaceBetween,
+      },
     },
   });
 }
