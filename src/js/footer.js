@@ -1,34 +1,62 @@
-// document.getElementById('emailForm').addEventListener('submit', async function(event) {
-//   event.preventDefault(); 
-  
-//   const emailInput = document.getElementById('emailInput').value;
-//   const messageInput = document.getElementById('messageInput').value;
+import { postRequest } from './api';
 
-//  try {
-//     const response = await fetch('url-server', {
-//       method: 'POST',
-//       headers: {
-//         'Content-Type': 'application/json'
-//       },
-//       body: JSON.stringify({ 
-//         email: emailInput, 
-//         message: messageInput })
-//     });
-//     if (response.ok) {
-//       showModal('Your request has been successfully submitted');
-//       document.getElementById('emailForm').reset();
-//     } else {
-//       throw new Error('Failed to submit request');
-//     }
-//   } catch (error) {
-//     showModal('Failed to submit request. Try again later');
-//   }
+const form = document.querySelector('#emailForm');
+const modal = document.querySelector('.backdrop');
 
-// });
+form.addEventListener('input', onInput);
+form.addEventListener('submit', onSubmit);
 
-// function showModal(message) {
-//   const modal = document.getElementById('modal');
-//   const modalContent = document.getElementById('modalContent');
-//   modalContent.textContent = message;
-//   modal.style.display = 'block';
-// }
+modal.addEventListener('click', e => {
+  const closest = e.target.closest('.modal-btn');
+
+  if (!closest && !e.target.classList.contains('backdrop')) return;
+
+  modal.classList.add('is-hidden');
+});
+
+window.addEventListener('keyup', onKeyup);
+
+function onInput(e) {
+  const statusMessage = e.target.nextElementSibling;
+  const inputName = e.target.name;
+
+  if (!e.target.checkValidity()) showError(statusMessage, inputName);
+  else showSuccess(statusMessage);
+}
+
+async function onSubmit(e) {
+  e.preventDefault();
+
+  const formData = new FormData(e.target);
+  const dataToSend = {};
+  formData.forEach((item, index) => (dataToSend[index] = item));
+
+  try {
+    const dataToDisplay = await postRequest(dataToSend);
+    setModalText(dataToDisplay);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+function onKeyup(e) {
+  if (e.key === 'Escape') modal.classList.add('is-hidden');
+}
+
+function showError(ref, inputName) {
+  ref.innerText = `Invalid ${inputName}, try again`;
+  ref.classList.remove('success');
+  ref.classList.add('error');
+}
+
+function showSuccess(ref) {
+  ref.innerText = 'Success';
+  ref.classList.remove('error');
+  ref.classList.add('success');
+}
+
+function setModalText({ title, message }) {
+  modal.classList.remove('is-hidden');
+  modal.querySelector('.modal-title').innerText = title;
+  modal.querySelector('.modal-captain').innerText = message;
+}
