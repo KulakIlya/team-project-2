@@ -1,20 +1,49 @@
-<!-- Modal window -->
-<div class="backdrop is-hidden">
-  <div class="modal">
-    <button class="modal-btn" type="modal">
-      <svg
-        class="modal-btn-icon"
-        width="22"
-        height="22"
-        aria-label="Modal close button"
-      >
-        <use href="./images/icons.svg#icon-x-close"></use>
-      </svg>
-    </button>
-    <h2 class="modal-title">Thank you for your interest in cooperation!</h2>
-    <p class="modal-captain">
-      The manager will contact you shortly to discuss further details and
-      opportunities for cooperation. Please stay in touch.
-    </p>
-  </div>
+        <footer class="footer">
+            <div class="container footer-container">
+
+        <div class="Jefferson-image">
+    <img
+         srcset="
+        ../images/footer_avatar_2x.png 1x,
+        ../images/footer_avatar_1x.png 2x
+        "
+        src="../images/footer_avatar_1x.png"
+        alt="image Jefferson"
+         width="70"
+        class="Jefferson-img"
+    />
+        <span class="h2Span">LET`S <span class="h2Work">WORK</span> TOGETHER</span>
+            </div>    
+  
+   <div class="footerFormOne">
+       <form class="emailForm" id="emailForm">
+        <input type="email" class="emailInput" id="emailInput" placeholder="clients@gmail.com" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
+        <input class="messageInput" id="messageInput" placeholder="comments" maxlength="200" required >
+           <button type="submit" class="footerBtn">Send</button>
+        </form>
+    </div>
+    
+    <!-- <div class="popup poup--show">
+        <div class="popup__dialog">
+            <div class="popup__content">
+            </div>
+        </div>
+    </div> -->
+
+    <div id="modal">
+        <div id="modalContent"></div>
+      </div>
+      <div class="footerFormTwo">
+     <ul class="ulFooter">
+        <li class="liOneFooter">
+            <a target="_blank" class="emLi" href="lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+        </li>
+        <li class="liTwoFooter">
+            <a target="_blank" class="tfLi" href="+380 11 1111 11 11">+380 11 1111 11 11 </a>
+        </li>   
+     </ul>
+    </div>
 </div>
+</footer>
+
+
