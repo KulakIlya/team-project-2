@@ -50,6 +50,9 @@ width: 390px;
 color: white;
 margin-right: 20px;
 height: 60px;
+white-space: nowrap;
+overflow: hidden; 
+text-overflow: ellipsis;
 }
 
 .messageInput {
