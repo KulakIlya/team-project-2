@@ -14,7 +14,6 @@ import redHeroDesktop2x from '../images/hero_desktop_bg_red_2x.png';
 import redHeroDesktopWebP2x from '../images/hero_desktop_bg_red_2x.webp';
 
 import redCoversDesktop1x from '../images/covers_desktop_bg_red_1x.png';
-import redCoversDesktopWebP1x from '../images/covers_desktop_bg_red_1x.webp';
 import redCoversDesktop2x from '../images/covers_desktop_bg_red_2x.png';
 import redCoversDesktopWebP2x from '../images/covers_desktop_bg_red_2x.webp';
 import redCoversMobile1x from '../images/covers_mobile_bg_red_1x.png';
@@ -178,18 +177,18 @@ const themes = {
   red: {
     '--accent': '#ed3b44',
     '--mobile-hero-bg-1x': `url(${redHeroMobile1x})`,
-    '--mobile-hero-bg-2x': `url(${redHeroMobileWebP1x})`,
-    '--mobile-hero-bg-webP-1x': `url(${redHeroMobile2x})`,
+    '--mobile-hero-bg-2x': `url(${redHeroMobile2x})`,
+    '--mobile-hero-bg-webP-1x': `url(${redHeroMobileWebP1x})`,
     '--mobile-hero-bg-webP-2x': `url(${redHeroMobileWebP2x})`,
 
     '--tablet-hero-bg-1x': `url(${redHeroTablet1x})`,
-    '--tablet-hero-bg-2x': `url(${redHeroTabletWebP1x})`,
-    '--tablet-hero-bg-webP-1x': `url${redHeroTablet2x})`,
+    '--tablet-hero-bg-2x': `url(${redHeroTablet2x})`,
+    '--tablet-hero-bg-webP-1x': `url(${redHeroTabletWebP1x})`,
     '--tablet-hero-bg-webP-2x': `url(${redHeroTabletWebP2x})`,
 
     '--desktop-hero-bg-1x': `url(${redHeroDesktop1x})`,
-    '--desktop-hero-bg-2x': `url(${redHeroDesktopWebP1x})`,
-    '--desktop-hero-bg-webP-1x': `url(${redHeroDesktop2x})`,
+    '--desktop-hero-bg-2x': `url(${redHeroDesktop2x})`,
+    '--desktop-hero-bg-webP-1x': `url(${redHeroDesktopWebP1x})`,
     '--desktop-hero-bg-webP-2x': `url(${redHeroDesktopWebP2x})`,
 
     '--mobile-cover-bg-1x': `url(${redCoversMobile1x})`,
@@ -198,13 +197,13 @@ const themes = {
     '--mobile-cover-bg-webP-2x': `url(${redCoversMobileWebP2x})`,
 
     '--tablet-cover-bg-1x': `url(${redCoversTablet1x})`,
-    '--tablet-cover-bg-2x': `url(${redCoversTabletWebP1x})`,
+    '--tablet-cover-bg-2x': `url(${redCoversTablet2x})`,
 
-    '--tablet-cover-bg-webP-1x': `url(${redCoversTablet2x})`,
+    '--tablet-cover-bg-webP-1x': `url(${redCoversTabletWebP1x})`,
     '--tablet-cover-bg-webP-2x': `url(${redCoversTabletWebP2x})`,
 
     '--desktop-cover-bg-1x': `url(${redCoversDesktop1x})`,
-    '--desktop-cover-bg-2x': `url(${redCoversDesktopWebP1x})`,
+    '--desktop-cover-bg-2x': `url(${redCoversDesktop2x})`,
     '--desktop-cover-bg-webP-1x': `url(${redCoversDesktop2x})`,
     '--desktop-cover-bg-webP-2x': `url(${redCoversDesktopWebP2x})`,
   },
@@ -216,13 +215,13 @@ const themes = {
     '--mobile-hero-bg-webP-2x': `url(${greenHeroMobileWebP2x})`,
 
     '--tablet-hero-bg-1x': `url(${greenHeroTablet1x})`,
-    '--tablet-hero-bg-2x': `url(${greenHeroTabletWebP1x})`,
-    '--tablet-hero-bg-webP-1x': `url${greenHeroTablet2x})`,
+    '--tablet-hero-bg-2x': `url(${greenHeroTablet2x})`,
+    '--tablet-hero-bg-webP-1x': `url(${greenHeroTabletWebP1x})`,
     '--tablet-hero-bg-webP-2x': `url(${greenHeroTabletWebP2x})`,
 
     '--desktop-hero-bg-1x': `url(${greenHeroDesktop1x})`,
-    '--desktop-hero-bg-2x': `url(${greenHeroDesktopWebP1x})`,
-    '--desktop-hero-bg-webP-1x': `url(${greenHeroDesktop2x})`,
+    '--desktop-hero-bg-2x': `url(${greenHeroDesktop2x})`,
+    '--desktop-hero-bg-webP-1x': `url(${greenHeroDesktopWebP1x})`,
     '--desktop-hero-bg-webP-2x': `url(${greenHeroDesktopWebP2x})`,
 
     '--mobile-cover-bg-1x': `url(${greenCoversMobile1x})`,
@@ -244,18 +243,18 @@ const themes = {
   blue: {
     '--accent': '#0041e8',
     '--mobile-hero-bg-1x': `url(${blueHeroMobile1x})`,
-    '--mobile-hero-bg-2x': `url(${blueHeroMobileWebP1x})`,
-    '--mobile-hero-bg-webP-1x': `url(${blueHeroMobile2x})`,
+    '--mobile-hero-bg-2x': `url(${blueHeroMobile2x})`,
+    '--mobile-hero-bg-webP-1x': `url(${blueHeroMobileWebP1x})`,
     '--mobile-hero-bg-webP-2x': `url(${blueHeroMobileWebP2x})`,
 
     '--tablet-hero-bg-1x': `url(${blueHeroTablet1x})`,
-    '--tablet-hero-bg-2x': `url(${blueHeroTabletWebP1x})`,
-    '--tablet-hero-bg-webP-1x': `url${blueHeroTablet2x})`,
+    '--tablet-hero-bg-2x': `url(${blueHeroTablet2x})`,
+    '--tablet-hero-bg-webP-1x': `url(${blueHeroTabletWebP1x})`,
     '--tablet-hero-bg-webP-2x': `url(${blueHeroTabletWebP2x})`,
 
     '--desktop-hero-bg-1x': `url(${blueHeroDesktop1x})`,
-    '--desktop-hero-bg-2x': `url(${blueHeroDesktopWebP1x})`,
-    '--desktop-hero-bg-webP-1x': `url(${blueHeroDesktop2x})`,
+    '--desktop-hero-bg-2x': `url(${blueHeroDesktop2x})`,
+    '--desktop-hero-bg-webP-1x': `url(${blueHeroDesktopWebP1x})`,
     '--desktop-hero-bg-webP-2x': `url(${blueHeroDesktopWebP2x})`,
 
     '--mobile-cover-bg-1x': `url(${blueCoversMobile1x})`,
@@ -277,18 +276,18 @@ const themes = {
   'dark-orange': {
     '--accent': '#e6533c',
     '--mobile-hero-bg-1x': `url(${darkOrangeHeroMobile1x})`,
-    '--mobile-hero-bg-2x': `url(${darkOrangeHeroMobileWebP1x})`,
-    '--mobile-hero-bg-webP-1x': `url(${darkOrangeHeroMobile2x})`,
+    '--mobile-hero-bg-2x': `url(${darkOrangeHeroMobile2x})`,
+    '--mobile-hero-bg-webP-1x': `url(${darkOrangeHeroMobileWebP1x})`,
     '--mobile-hero-bg-webP-2x': `url(${darkOrangeHeroMobileWebP2x})`,
 
     '--tablet-hero-bg-1x': `url(${darkOrangeHeroTablet1x})`,
-    '--tablet-hero-bg-2x': `url(${darkOrangeHeroTabletWebP1x})`,
-    '--tablet-hero-bg-webP-1x': `url${darkOrangeHeroTablet2x})`,
+    '--tablet-hero-bg-2x': `url(${darkOrangeHeroTablet2x})`,
+    '--tablet-hero-bg-webP-1x': `url(${darkOrangeHeroTabletWebP1x})`,
     '--tablet-hero-bg-webP-2x': `url(${darkOrangeHeroTabletWebP2x})`,
 
     '--desktop-hero-bg-1x': `url(${darkOrangeHeroDesktop1x})`,
-    '--desktop-hero-bg-2x': `url(${darkOrangeHeroDesktopWebP1x})`,
-    '--desktop-hero-bg-webP-1x': `url(${darkOrangeHeroDesktop2x})`,
+    '--desktop-hero-bg-2x': `url(${darkOrangeHeroDesktop2x})`,
+    '--desktop-hero-bg-webP-1x': `url(${darkOrangeHeroDesktopWebP1x})`,
     '--desktop-hero-bg-webP-2x': `url(${darkOrangeHeroDesktopWebP2x})`,
 
     '--mobile-cover-bg-1x': `url(${darkOrangeCoversMobile1x})`,
@@ -310,18 +309,18 @@ const themes = {
   'dark-green': {
     '--accent': '#2b4441',
     '--mobile-hero-bg-1x': `url(${darkGreenHeroMobile1x})`,
-    '--mobile-hero-bg-2x': `url(${darkGreenHeroMobileWebP1x})`,
-    '--mobile-hero-bg-webP-1x': `url(${darkGreenHeroMobile2x})`,
+    '--mobile-hero-bg-2x': `url(${darkGreenHeroMobile2x})`,
+    '--mobile-hero-bg-webP-1x': `url(${darkGreenHeroMobileWebP1x})`,
     '--mobile-hero-bg-webP-2x': `url(${darkGreenHeroMobileWebP2x})`,
 
     '--tablet-hero-bg-1x': `url(${darkGreenHeroTablet1x})`,
-    '--tablet-hero-bg-2x': `url(${darkGreenHeroTabletWebP1x})`,
-    '--tablet-hero-bg-webP-1x': `url${darkGreenHeroTablet2x})`,
+    '--tablet-hero-bg-2x': `url(${darkGreenHeroTablet2x})`,
+    '--tablet-hero-bg-webP-1x': `url(${darkGreenHeroTabletWebP1x})`,
     '--tablet-hero-bg-webP-2x': `url(${darkGreenHeroTabletWebP2x})`,
 
     '--desktop-hero-bg-1x': `url(${darkGreenHeroDesktop1x})`,
-    '--desktop-hero-bg-2x': `url(${darkGreenHeroDesktopWebP1x})`,
-    '--desktop-hero-bg-webP-1x': `url(${darkGreenHeroDesktop2x})`,
+    '--desktop-hero-bg-2x': `url(${darkGreenHeroDesktop2x})`,
+    '--desktop-hero-bg-webP-1x': `url(${darkGreenHeroDesktopWebP1x})`,
     '--desktop-hero-bg-webP-2x': `url(${darkGreenHeroDesktopWebP2x})`,
 
     '--mobile-cover-bg-1x': `url(${darkGreenCoversMobile1x})`,
@@ -343,18 +342,18 @@ const themes = {
   orange: {
     '--accent': '#ff7f08',
     '--mobile-hero-bg-1x': `url(${orangeHeroMobile1x})`,
-    '--mobile-hero-bg-2x': `url(${orangeHeroMobileWebP1x})`,
-    '--mobile-hero-bg-webP-1x': `url(${orangeHeroMobile2x})`,
+    '--mobile-hero-bg-2x': `url(${orangeHeroMobile2x})`,
+    '--mobile-hero-bg-webP-1x': `url(${orangeHeroMobileWebP1x})`,
     '--mobile-hero-bg-webP-2x': `url(${orangeHeroMobileWebP2x})`,
 
     '--tablet-hero-bg-1x': `url(${orangeHeroTablet1x})`,
-    '--tablet-hero-bg-2x': `url(${orangeHeroTabletWebP1x})`,
-    '--tablet-hero-bg-webP-1x': `url${orangeHeroTablet2x})`,
+    '--tablet-hero-bg-2x': `url(${orangeHeroTablet2x})`,
+    '--tablet-hero-bg-webP-1x': `url(${orangeHeroTabletWebP1x})`,
     '--tablet-hero-bg-webP-2x': `url(${orangeHeroTabletWebP2x})`,
 
     '--desktop-hero-bg-1x': `url(${orangeHeroDesktop1x})`,
-    '--desktop-hero-bg-2x': `url(${orangeHeroDesktopWebP1x})`,
-    '--desktop-hero-bg-webP-1x': `url(${orangeHeroDesktop2x})`,
+    '--desktop-hero-bg-2x': `url(${orangeHeroDesktop2x})`,
+    '--desktop-hero-bg-webP-1x': `url(${orangeHeroDesktopWebP1x})`,
     '--desktop-hero-bg-webP-2x': `url(${orangeHeroDesktopWebP2x})`,
 
     '--mobile-cover-bg-1x': `url(${orangeCoversMobile1x})`,
@@ -378,7 +377,15 @@ const themes = {
 const themePicker = document.querySelectorAll('.theme-picker-form');
 const root = document.querySelector(':root');
 const setVariables = vars =>
-  Object.entries(vars).forEach(v => root.style.setProperty(v[0], v[1]));
+  Object.entries(vars).forEach(v => {
+    root.style.setProperty(v[0], v[1]);
+    // console.log(root.style);
+  });
+
+root.style.setProperty(
+  '--tablet-hero-bg-webP-1x',
+  `url(${greenHeroTabletWebP1x})`
+);
 
 themePicker.forEach(item => {
   const formInputs = item?.elements;
@@ -387,7 +394,7 @@ themePicker.forEach(item => {
   formInputs['theme-picker'].forEach(
     item => (item.checked = storedTheme === item.value)
   );
-  setVariables(themes[storedTheme]);
+  // setVariables(themes[storedTheme]);
 
   item?.addEventListener('change', e => {
     localStorage.setItem('picked-theme', e.target.value);
