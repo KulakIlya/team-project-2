@@ -377,15 +377,7 @@ const themes = {
 const themePicker = document.querySelectorAll('.theme-picker-form');
 const root = document.querySelector(':root');
 const setVariables = vars =>
-  Object.entries(vars).forEach(v => {
-    root.style.setProperty(v[0], v[1]);
-    // console.log(root.style);
-  });
-
-root.style.setProperty(
-  '--tablet-hero-bg-webP-1x',
-  `url(${greenHeroTabletWebP1x})`
-);
+  Object.entries(vars).forEach(v => root.style.setProperty(v[0], v[1]));
 
 themePicker.forEach(item => {
   const formInputs = item?.elements;
@@ -394,7 +386,7 @@ themePicker.forEach(item => {
   formInputs['theme-picker'].forEach(
     item => (item.checked = storedTheme === item.value)
   );
-  // setVariables(themes[storedTheme]);
+  setVariables(themes[storedTheme]);
 
   item?.addEventListener('change', e => {
     localStorage.setItem('picked-theme', e.target.value);
