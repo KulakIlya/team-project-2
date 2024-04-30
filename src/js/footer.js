@@ -6,17 +6,6 @@ const modal = document.querySelector('.backdrop');
 form.addEventListener('input', onInput);
 form.addEventListener('submit', onSubmit);
 
-modal.addEventListener('click', e => {
-  const closest = e.target.closest('.modal-btn');
-
-  if (!closest && !e.target.classList.contains('backdrop')) return;
-
-  modal.classList.add('is-hidden');
-  document.body.classList.add('.modal-open');
-});
-
-window.addEventListener('keyup', onKeyup);
-
 function onInput(e) {
   const statusMessage = e.target.nextElementSibling;
   const inputName = e.target.name;
@@ -37,16 +26,29 @@ async function onSubmit(e) {
   try {
     const dataToDisplay = await postRequest(dataToSend);
     setModalText(dataToDisplay);
+
+    modal.addEventListener('click', onClick);
+    window.addEventListener('keyup', onKeyup);
+
+    e.target.reset();
+    e.target
+      .querySelectorAll('.status-message')
+      .forEach(item => (item.innerText = ''));
   } catch (error) {
     console.error(error);
   }
 }
 
+function onClick(e) {
+  const closest = e.target.closest('.modal-btn');
+
+  if (!closest && !e.target.classList.contains('backdrop')) return;
+
+  closeModal();
+}
+
 function onKeyup(e) {
-  if (e.key === 'Escape') {
-    modal.classList.add('is-hidden');
-    document.body.classList.add('modal-open');
-  }
+  if (e.key === 'Escape') closeModal();
 }
 
 function showError(ref, inputName) {
@@ -65,4 +67,11 @@ function setModalText({ title, message }) {
   modal.classList.remove('is-hidden');
   modal.querySelector('.modal-title').innerText = title;
   modal.querySelector('.modal-captain').innerText = message;
+}
+
+function closeModal() {
+  modal.classList.add('is-hidden');
+  document.body.classList.add('modal-open');
+  modal.removeEventListener('click', onClick);
+  window.removeEventListener('keyup', onKeyup);
 }
