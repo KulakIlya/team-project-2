@@ -1,6 +1,15 @@
 import createAccordion from './accordion';
 import createSwiper from './swiper';
 
+const accordion = document.querySelector('.accordion');
+
+accordion.addEventListener('click', e => {
+  const closest = e.target.closest('.accordion-button');
+  if (!closest) return;
+
+  closest.querySelector('.icon-arrow-down').classList.toggle('rotated');
+});
+
 createAccordion({
   containerClass: 'accordion', // Клас контейнера аккордеона
   elementClass: 'accordion-item', // Клас кожного елементу аккордеона
