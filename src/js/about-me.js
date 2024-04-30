@@ -10,12 +10,14 @@ accordion.addEventListener('click', e => {
   closest.querySelector('.icon-arrow-down').classList.toggle('rotated');
 });
 
-createAccordion({
+const acc = createAccordion({
   containerClass: 'accordion', // Клас контейнера аккордеона
   elementClass: 'accordion-item', // Клас кожного елементу аккордеона
   triggerClass: 'accordion-button', // Клас кнопки аккордеона
   panelClass: 'accordion-content', // Клас контенту аккордеона
 });
+
+acc.open(0);
 
 const aboutmeSwiper = createSwiper({
   swiperContainerClass: 'aboutme-swiper',
