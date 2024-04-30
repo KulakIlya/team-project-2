@@ -1,6 +1,6 @@
 import Accordion from 'accordion-js';
 /**
- * initializes accordion instance
+ * initializes accordion instance and accordion button click event listener
  * @param {object} options - object of required classes
  * @param {string} options.containerClass - The class of the container element to contain the accordion.
  * @param {string} options.elementClass - The class of each accordion element.
@@ -17,10 +17,27 @@ export default function createAccordion({
 }) {
   const container = getClassName(`.${containerClass}`);
 
-  return new Accordion(container, {
+  const accordion = new Accordion(container, {
     elementClass,
     triggerClass,
     panelClass,
+  });
+
+  document.querySelector(`.${containerClass}`).addEventListener('click', e => {
+    const closest = e.target.closest(`.${triggerClass}`);
+    if (!closest) return;
+
+    restoreDefaultPositionOfIcons(e.currentTarget, closest.id, triggerClass);
+    closest.querySelector('.icon-arrow-down').classList.toggle('rotated');
+  });
+
+  return accordion;
+}
+
+function restoreDefaultPositionOfIcons(accordion, iconToIgnore, triggerClass) {
+  accordion.querySelectorAll(`.${triggerClass}`).forEach(item => {
+    if (iconToIgnore === item.id) return;
+    item.querySelector('.icon-arrow-down').classList.remove('rotated');
   });
 }
 
