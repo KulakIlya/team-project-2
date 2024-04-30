@@ -21,204 +21,30 @@
   transition: all 250ms ease-in-out;
 }
 
-:root:has(#green:checked) {
-  --accent: var(--green);
-
-  --mobile-hero-bg-1x: url(../images/hero_mobile_bg_green_1x.png);
-  --mobile-hero-bg-2x: url(../images/hero_mobile_bg_green_2x.png);
-  --mobile-hero-bg-webP-1x: url(../images/hero_mobile_bg_green_1x.webp);
-  --mobile-hero-bg-webP-2x: url(../images/hero_mobile_bg_green_2x.webp);
-
-  --tablet-hero-bg-1x: url(../images/hero_tablet_bg_green_1x.png);
-  --tablet-hero-bg-2x: url(../images/hero_tablet_bg_green_2x.png);
-  --tablet-hero-bg-webP-1x: url(../images/hero_tablet_bg_green_1x.webp);
-  --tablet-hero-bg-webP-2x: url(../images/hero_tablet_bg_green_2x.webp);
-
-  --desktop-hero-bg-1x: url(../images/hero_desktop_bg_green_1x.png);
-  --desktop-hero-bg-2x: url(../images/hero_desktop_bg_green_2x.png);
-  --desktop-hero-bg-webP-1x: url(../images/hero_desktop_bg_green_1x.webp);
-  --desktop-hero-bg-webP-2x: url(../images/hero_desktop_bg_green_2x.webp);
-
-  --mobile-cover-bg-1x: url(../images/covers_mobile_bg_green_1x.png);
-  --mobile-cover-bg-2x: url(../images/covers_mobile_bg_green_2x.png);
-  --mobile-cover-bg-webP-1x: url(../images/covers_mobile_bg_green_1x.webp);
-  --mobile-cover-bg-webP-2x: url(../images/covers_mobile_bg_green_2x.webp);
-
-  --tablet-cover-bg-1x: url(../images/covers_tablet_bg_green_1x.png);
-  --tablet-cover-bg-2x: url(../images/covers_tablet_bg_green_2x.png);
-  --tablet-cover-bg-webP-1x: url(../images/covers_tablet_bg_green_1x.webp);
-  --tablet-cover-bg-webP-2x: url(../images/covers_tablet_bg_green_2x.webp);
-
-  --desktop-cover-bg-1x: url(../images/covers_desktop_bg_green_1x.png);
-  --desktop-cover-bg-2x: url(../images/covers_desktop_bg_green_2x.png);
-  --desktop-cover-bg-webP-1x: url(../images/covers_desktop_bg_green_1x.webp);
-  --desktop-cover-bg-webP-2x: url(../images/covers_desktop_bg_green_2x.webp);
-}
-
-:root:has(#blue:checked) {
-  --accent: var(--blue);
-
-  --mobile-hero-bg-1x: url(../images/hero_mobile_bg_blue_1x.png);
-  --mobile-hero-bg-2x: url(../images/hero_mobile_bg_blue_2x.png);
-  --mobile-hero-bg-webP-1x: url(../images/hero_mobile_bg_blue_1x.webp);
-  --mobile-hero-bg-webP-2x: url(../images/hero_mobile_bg_blue_2x.webp);
-
-  --tablet-hero-bg-1x: url(../images/hero_tablet_bg_blue_1x.png);
-  --tablet-hero-bg-2x: url(../images/hero_tablet_bg_blue_2x.png);
-  --tablet-hero-bg-webP-1x: url(../images/hero_tablet_bg_blue_1x.webp);
-  --tablet-hero-bg-webP-2x: url(../images/hero_tablet_bg_blue_2x.webp);
-
-  --desktop-hero-bg-1x: url(../images/hero_desktop_bg_blue_1x.png);
-  --desktop-hero-bg-2x: url(../images/hero_desktop_bg_blue_2x.png);
-  --desktop-hero-bg-webP-1x: url(../images/hero_desktop_bg_blue_1x.webp);
-  --desktop-hero-bg-webP-2x: url(../images/hero_desktop_bg_blue_2x.webp);
-
-  --mobile-cover-bg-1x: url(../images/covers_mobile_bg_blue_1x.png);
-  --mobile-cover-bg-2x: url(../images/covers_mobile_bg_blue_2x.png);
-  --mobile-cover-bg-webP-1x: url(../images/covers_mobile_bg_blue_1x.webp);
-  --mobile-cover-bg-webP-2x: url(../images/covers_mobile_bg_blue_2x.webp);
-
-  --tablet-cover-bg-1x: url(../images/covers_tablet_bg_blue_1x.png);
-  --tablet-cover-bg-2x: url(../images/covers_tablet_bg_blue_2x.png);
-
-  --tablet-cover-bg-webP-1x: url(../images/covers_tablet_bg_blue_1x.webp);
-  --tablet-cover-bg-webP-2x: url(../images/covers_tablet_bg_blue_2x.webp);
-
-  --desktop-cover-bg-1x: url(../images/covers_desktop_bg_blue_1x.png);
-  --desktop-cover-bg-2x: url(../images/covers_desktop_bg_blue_2x.png);
-  --desktop-cover-bg-webP-1x: url(../images/covers_desktop_bg_blue_1x.webp);
-  --desktop-cover-bg-webP-2x: url(../images/covers_desktop_bg_blue_2x.webp);
-}
-
-:root:has(#dark-orange:checked) {
-  --accent: var(--dark-orange);
-
-  --mobile-hero-bg-1x: url(../images/hero_mobile_bg_dark-orange_1x.png);
-  --mobile-hero-bg-2x: url(../images/hero_mobile_bg_dark-orange_2x.png);
-  --mobile-hero-bg-webP-1x: url(../images/hero_mobile_bg_dark-orange_1x.webp);
-  --mobile-hero-bg-webP-2x: url(../images/hero_mobile_bg_dark-orange_2x.webp);
-
-  --tablet-hero-bg-1x: url(../images/hero_tablet_bg_dark-orange_1x.png);
-  --tablet-hero-bg-2x: url(../images/hero_tablet_bg_dark-orange_2x.png);
-  --tablet-hero-bg-webP-1x: url(../images/hero_tablet_bg_dark-orange_1x.webp);
-  --tablet-hero-bg-webP-2x: url(../images/hero_tablet_bg_dark-orange_2x.webp);
-
-  --desktop-hero-bg-1x: url(../images/hero_desktop_bg_dark-orange_1x.png);
-  --desktop-hero-bg-2x: url(../images/hero_desktop_bg_dark-orange_2x.png);
-  --desktop-hero-bg-webP-1x: url(../images/hero_desktop_bg_dark-orange_1x.webp);
-  --desktop-hero-bg-webP-2x: url(../images/hero_desktop_bg_dark-orange_2x.webp);
-
-  --mobile-cover-bg-1x: url(../images/covers_mobile_bg_dark-orange_1x.png);
-  --mobile-cover-bg-2x: url(../images/covers_mobile_bg_dark-orange_2x.png);
-  --mobile-cover-bg-webP-1x: url(../images/covers_mobile_bg_dark-orange_1x.webp);
-  --mobile-cover-bg-webP-2x: url(../images/covers_mobile_bg_dark-orange_2x.webp);
-
-  --tablet-cover-bg-1x: url(../images/covers_tablet_bg_dark-orange_1x.png);
-  --tablet-cover-bg-2x: url(../images/covers_tablet_bg_dark-orange_2x.png);
-
-  --tablet-cover-bg-webP-1x: url(../images/covers_tablet_bg_dark-orange_1x.webp);
-  --tablet-cover-bg-webP-2x: url(../images/covers_tablet_bg_dark-orange_2x.webp);
-
-  --desktop-cover-bg-1x: url(../images/covers_desktop_bg_dark-orange_1x.png);
-  --desktop-cover-bg-2x: url(../images/covers_desktop_bg_dark-orange_2x.png);
-  --desktop-cover-bg-webP-1x: url(../images/covers_desktop_bg_dark-orange_1x.webp);
-  --desktop-cover-bg-webP-2x: url(../images/covers_desktop_bg_dark-orange_2x.webp);
-}
-
-:root:has(#dark-green:checked) {
-  --accent: var(--dark-green);
-
-  --mobile-hero-bg-1x: url(../images/hero_mobile_bg_dark-green_1x.png);
-  --mobile-hero-bg-2x: url(../images/hero_mobile_bg_dark-green_2x.png);
-  --mobile-hero-bg-webP-1x: url(../images/hero_mobile_bg_dark-green_1x.webp);
-  --mobile-hero-bg-webP-2x: url(../images/hero_mobile_bg_dark-green_2x.webp);
-
-  --tablet-hero-bg-1x: url(../images/hero_tablet_bg_dark-green_1x.png);
-  --tablet-hero-bg-2x: url(../images/hero_tablet_bg_dark-green_2x.png);
-  --tablet-hero-bg-webP-1x: url(../images/hero_tablet_bg_dark-green_1x.webp);
-  --tablet-hero-bg-webP-2x: url(../images/hero_tablet_bg_dark-green_2x.webp);
-
-  --desktop-hero-bg-1x: url(../images/hero_desktop_bg_dark-green_1x.png);
-  --desktop-hero-bg-2x: url(../images/hero_desktop_bg_dark-green_2x.png);
-  --desktop-hero-bg-webP-1x: url(../images/hero_desktop_bg_dark-green_1x.webp);
-  --desktop-hero-bg-webP-2x: url(../images/hero_desktop_bg_dark-green_2x.webp);
-
-  --mobile-cover-bg-1x: url(../images/covers_mobile_bg_dark-green_1x.png);
-  --mobile-cover-bg-2x: url(../images/covers_mobile_bg_dark-green_2x.png);
-  --mobile-cover-bg-webP-1x: url(../images/covers_mobile_bg_dark-green_1x.webp);
-  --mobile-cover-bg-webP-2x: url(../images/covers_mobile_bg_dark-green_2x.webp);
-
-  --tablet-cover-bg-1x: url(../images/covers_tablet_bg_dark-green_1x.png);
-  --tablet-cover-bg-2x: url(../images/covers_tablet_bg_dark-green_2x.png);
-
-  --tablet-cover-bg-webP-1x: url(../images/covers_tablet_bg_dark-green_1x.webp);
-  --tablet-cover-bg-webP-2x: url(../images/covers_tablet_bg_dark-green_2x.webp);
-
-  --desktop-cover-bg-1x: url(../images/covers_desktop_bg_dark-green_1x.png);
-  --desktop-cover-bg-2x: url(../images/covers_desktop_bg_dark-green_2x.png);
-  --desktop-cover-bg-webP-1x: url(../images/covers_desktop_bg_dark-green_1x.webp);
-  --desktop-cover-bg-webP-2x: url(../images/covers_desktop_bg_dark-green_2x.webp);
-}
-
-:root:has(#orange:checked) {
-  --accent: var(--orange);
-
-  --mobile-hero-bg-1x: url(../images/hero_mobile_bg_orange_1x.png);
-  --mobile-hero-bg-2x: url(../images/hero_mobile_bg_orange_2x.png);
-  --mobile-hero-bg-webP-1x: url(../images/hero_mobile_bg_orange_1x.png);
-  --mobile-hero-bg-webP-2x: url(../images/hero_mobile_bg_orange_2x.png);
-
-  --tablet-hero-bg-1x: url(../images/hero_tablet_bg_orange_1x.png);
-  --tablet-hero-bg-2x: url(../images/hero_tablet_bg_orange_2x.png);
-  --tablet-hero-bg-webP-1x: url(../images/hero_tablet_bg_orange_1x.webp);
-  --tablet-hero-bg-webP-2x: url(../images/hero_tablet_bg_orange_2x.webp);
-
-  --desktop-hero-bg-1x: url(../images/hero_desktop_bg_orange_1x.png);
-  --desktop-hero-bg-2x: url(../images/hero_desktop_bg_orange_2x.png);
-  --desktop-hero-bg-webP-1x: url(../images/hero_desktop_bg_orange_1x.webp);
-  --desktop-hero-bg-webP-2x: url(../images/hero_desktop_bg_orange_2x.webp);
-
-  --mobile-cover-bg-1x: url(../images/covers_mobile_bg_orange_1x.png);
-  --mobile-cover-bg-2x: url(../images/covers_mobile_bg_orange_2x.png);
-  --mobile-cover-bg-webP-1x: url(../images/covers_mobile_bg_orange_1x.webp);
-  --mobile-cover-bg-webP-2x: url(../images/covers_mobile_bg_orange_2x.webp);
-
-  --tablet-cover-bg-1x: url(../images/covers_tablet_bg_orange_1x.png);
-  --tablet-cover-bg-2x: url(../images/covers_tablet_bg_orange_2x.png);
-
-  --tablet-cover-bg-webP-1x: url(../images/covers_tablet_bg_orange_1x.webp);
-  --tablet-cover-bg-webP-2x: url(../images/covers_tablet_bg_orange_2x.webp);
-
-  --desktop-cover-bg-1x: url(../images/covers_desktop_bg_orange_1x.png);
-  --desktop-cover-bg-2x: url(../images/covers_desktop_bg_orange_2x.png);
-  --desktop-cover-bg-webP-1x: url(../images/covers_desktop_bg_orange_1x.webp);
-  --desktop-cover-bg-webP-2x: url(../images/covers_desktop_bg_orange_2x.webp);
-}
-
 .theme-picker-input:checked {
   background-color: var(--accent);
 }
 
-.theme-picker-input#red {
+.theme-picker-input[value='red'] {
   border-color: var(--red);
 }
 
-.theme-picker-input#green {
+.theme-picker-input[value='green'] {
   border-color: var(--green);
 }
 
-.theme-picker-input#blue {
+.theme-picker-input[value='blue'] {
   border-color: var(--blue);
 }
 
-.theme-picker-input#dark-orange {
+.theme-picker-input[value='dark-orange'] {
   border-color: var(--dark-orange);
 }
 
-.theme-picker-input#dark-green {
+.theme-picker-input[value='dark-green'] {
   border-color: var(--dark-green);
 }
 
-.theme-picker-input#orange {
+.theme-picker-input[value='orange'] {
   border-color: var(--orange);
 }

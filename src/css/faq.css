@@ -17,19 +17,15 @@
   padding-bottom: 20px;
   background: inherit;
   border-top: 1px solid rgba(250, 250, 250, 0.2);
-  /* transition: all 250ms ease-in-out; */
-}
-
-.faq-item-title {
-  text-align: left;
 }
 
 .faq-scroll-button {
+  text-align: left;
+  color: inherit;
   padding-top: 20px;
 
   display: flex;
   justify-content: space-between;
-  /* gap: 44px; */
 }
 
 .faq-scroll-button .icon-wrapper {

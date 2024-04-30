@@ -4,7 +4,7 @@ import createSwiper from './swiper';
 function generateReviewCard(review) {
   return `
     <li class="swiper-slide reviews-li">
-            <img src="${review.avatar_url}"
+            <img class="avatar" src="${review.avatar_url}"
                  srcset="${review.avatar_url} 1x,
                          ${review.avatar_url.replace('@1x', '@2x')} 2x"
                  alt=${review.author}

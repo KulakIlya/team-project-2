@@ -16,7 +16,7 @@
 }
 .h2Span {
   color: var(--white);
-  font-size: 64px;
+  font-size: 40px;
   text-align: center;
   vertical-align: middle;
 }
@@ -128,10 +128,14 @@
 }
 .ulFooter {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 8px;
 
   margin-top: 64px;
+}
+
+.ulFooter li:last-child {
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 320px) {
@@ -202,6 +206,12 @@
   }
 }
 
+@media screen and (min-width: 375px) {
+  .ulFooter li:last-child {
+    margin: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer {
     margin: 0;
@@ -216,13 +226,14 @@
     background-repeat: no-repeat;
   }
 
+  .h2Span {
+    font-size: 64px;
+  }
+
   .footer-container {
     margin: 0;
   }
 
-  .h2Span {
-    color: white;
-  }
   .Jefferson-img {
     display: inline-block;
     padding-left: 0px;
@@ -299,8 +310,6 @@
     color: var(--white);
   }
   .h2Span {
-    color: white;
-    font-size: 64px;
     text-align: center;
     vertical-align: middle;
   }
