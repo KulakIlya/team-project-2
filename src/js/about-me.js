@@ -7,6 +7,7 @@ accordion.addEventListener('click', e => {
   const closest = e.target.closest('.accordion-button');
   if (!closest) return;
 
+  restoreDefaultPositionOfIcons(closest.id);
   closest.querySelector('.icon-arrow-down').classList.toggle('rotated');
 });
 
@@ -35,3 +36,10 @@ nextSlideBtn.addEventListener('click', e => {
   console.log('click-nextSlideBtn');
   aboutmeSwiper.slideNext();
 });
+
+function restoreDefaultPositionOfIcons(iconToIgnore) {
+  accordion.querySelectorAll('.accordion-button').forEach(item => {
+    if (iconToIgnore === item.id) return;
+    item.querySelector('.icon-arrow-down').classList.remove('rotated');
+  });
+}
