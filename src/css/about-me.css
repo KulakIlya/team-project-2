@@ -14,9 +14,19 @@
 }
 
 .image-container {
+  overflow: hidden;
   margin-top: 10px;
-  background-size: cover;
-  background-position: center;
+  border-radius: 24px;
+}
+
+@media screen and (min-width: 375px) {
+  .image-container {
+    border-radius: 0;
+  }
+}
+
+.about-me-img {
+  min-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
