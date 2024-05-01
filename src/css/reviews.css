@@ -77,7 +77,7 @@
 
 @media screen and (min-width: 1440px) {
   .swiper-slide.reviews-li {
-    min-width: 343px;
+    max-width: 343px;
     /* margin-right: 16px; */
     flex: 1 0 calc(25% - 12px);
   }
