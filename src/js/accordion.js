@@ -28,18 +28,10 @@ export default function createAccordion({
     const closest = e.target.closest(`.${triggerClass}`);
     if (!closest) return;
 
-    restoreDefaultPositionOfIcons(e.currentTarget, closest.id, triggerClass);
     closest.querySelector('.icon-arrow-down').classList.toggle('rotated');
   });
 
   return accordion;
-}
-
-function restoreDefaultPositionOfIcons(accordion, iconToIgnore, triggerClass) {
-  accordion.querySelectorAll(`.${triggerClass}`).forEach(item => {
-    if (iconToIgnore === item.id) return;
-    item.querySelector('.icon-arrow-down').classList.remove('rotated');
-  });
 }
 
 /**
