@@ -34,13 +34,22 @@
 }
 
 .marquee__line {
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   animation-name: marqueeLine;
   animation-duration: 9s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+}
+
+.marquee__line img {
+  transition: transform 250ms ease-in-out;
+}
+
+.marquee__line img:hover,
+.marquee__line img:focus {
+  transform: scale(1.05);
 }
 
 @keyframes marqueeLine {
@@ -59,6 +68,7 @@
 
 .covers-image {
   min-width: 282px;
+  height: 163px;
 }
 
 @media screen and (min-width: 768px) {
@@ -84,6 +94,7 @@
 
   .covers-image {
     min-width: 544px;
+    height: 314px;
   }
 
   @keyframes marqueeLine {
