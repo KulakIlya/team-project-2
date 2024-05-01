@@ -357,22 +357,32 @@ const themes = {
   },
 };
 
-const themePicker = document.querySelectorAll('.theme-picker-form');
+const themePickers = document.querySelectorAll('.theme-picker-form');
 const root = document.querySelector(':root');
 const setVariables = vars =>
   Object.entries(vars).forEach(v => root.style.setProperty(v[0], v[1]));
 
-themePicker.forEach(item => {
-  const formInputs = item?.elements;
-  const storedTheme = localStorage.getItem('picked-theme') ?? 'red';
-
-  formInputs['theme-picker'].forEach(
-    item => (item.checked = storedTheme === item.value)
-  );
-  setVariables(themes[storedTheme]);
-
-  item?.addEventListener('change', e => {
-    localStorage.setItem('picked-theme', e.target.value);
-    setVariables(themes[e.target.value]);
-  });
+themePickers.forEach(item => {
+  setCheckedRadioButton(item);
+  item.addEventListener('change', onFormChange);
 });
+
+function getTheme() {
+  return localStorage.getItem('picked-theme') ?? 'red';
+}
+
+function setCheckedRadioButton(item) {
+  const inputElements = item?.elements;
+
+  inputElements['theme-picker'].forEach(
+    item => (item.checked = item.value === getTheme())
+  );
+  setVariables(themes[getTheme()]);
+}
+
+function onFormChange(e) {
+  localStorage.setItem('picked-theme', e.target.value);
+  setVariables(themes[e.target.value]);
+
+  themePickers.forEach(item => setCheckedRadioButton(item));
+}
