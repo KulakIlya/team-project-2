@@ -11,7 +11,7 @@
 
 @media (min-resolution: 192dpi) {
   .content-covers {
-    background-image: var(--mobile-cover-bg-webP-2sx);
+    background-image: var(--mobile-cover-bg-webP-2x);
   }
 }
 

@@ -36,6 +36,12 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    background-image: none;
+  }
+}
+
 .top-div {
   display: flex;
   align-items: center;
