@@ -25,16 +25,19 @@ const swiper = createSwiper({
     prevEl: 'button-prev',
     nextEl: 'button-next',
   },
-  slidesPerView: { mobile: 1, tablet: 2, desktop: 2 },
+  slidesPerView: { mobile: 1, tablet: 2, desktop: 4 },
   spaceBetween: 20,
   loop: false,
+
+  slidesPerGroup: 1,
 });
 
 getReviews()
   .then(reviews => {
     if (reviews.length > 0) {
       displayReviews(reviews);
-      swiper.init();
+      swiper.update();
+      swiper.slidesPerViewDynamic();
     } else {
       displayPlaceholder();
     }

@@ -21,6 +21,7 @@ export default function createAccordion({
     elementClass,
     triggerClass,
     panelClass,
+    showMultiple: true,
   });
 
   document.querySelector(`.${containerClass}`).addEventListener('click', e => {
