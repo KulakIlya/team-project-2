@@ -12,7 +12,7 @@
 
   --accent: #ed3b44;
 
-  --mobile-hero-bg-1x: url(../images/hero_mobile_bg_red_1x.png);
+  /* --mobile-hero-bg-1x: url(../images/hero_mobile_bg_red_1x.png);
   --mobile-hero-bg-2x: url(../images/hero_mobile_bg_red_2x.png);
   --mobile-hero-bg-webP-1x: url(../images/hero_mobile_bg_red_1x.webp);
   --mobile-hero-bg-webP-2x: url(../images/hero_mobile_bg_red_2x.webp);
@@ -41,5 +41,5 @@
   --desktop-cover-bg-1x: url(../images/covers_desktop_bg_red_1x.png);
   --desktop-cover-bg-2x: url(../images/covers_desktop_bg_red_2x.png);
   --desktop-cover-bg-webP-1x: url(../images/covers_desktop_bg_red_1x.webp);
-  --desktop-cover-bg-webP-2x: url(../images/covers_desktop_bg_red_2x.webp);
+  --desktop-cover-bg-webP-2x: url(../images/covers_desktop_bg_red_2x.webp); */
 }
