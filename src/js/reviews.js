@@ -25,7 +25,7 @@ const swiper = createSwiper({
     prevEl: 'button-prev',
     nextEl: 'button-next',
   },
-  slidesPerView: { mobile: 1, tablet: 2, desktop: 3 },
+  slidesPerView: { mobile: 1, tablet: 2, desktop: 2 },
   spaceBetween: 20,
   loop: false,
 });
@@ -50,7 +50,5 @@ function displayPlaceholder() {
 }
 
 function displayReviews(reviews) {
-  reviews.forEach(item => {
-    swiper.appendSlide(generateReviewCard(item));
-  });
+  reviews.forEach(item => swiper.appendSlide(generateReviewCard(item)));
 }

@@ -137,28 +137,20 @@ import darkGreenCoversTabletWebP1x from '../images/covers_tablet_bg_dark-green_1
 import darkGreenCoversTablet2x from '../images/covers_tablet_bg_dark-green_2x.png';
 import darkGreenCoversTabletWebP2x from '../images/covers_tablet_bg_dark-green_2x.webp';
 
-import {
-  default as orangeHeroMobile1x,
-  default as orangeHeroMobileWebP1x,
-} from '../images/hero_mobile_bg_orange_1x.png';
-import {
-  default as orangeHeroMobile2x,
-  default as orangeHeroMobileWebP2x,
-} from '../images/hero_mobile_bg_orange_2x.png';
+import orangeHeroMobile1x from '../images/hero_mobile_bg_orange_1x.png';
+import orangeHeroMobileWebP1x from '../images/hero_mobile_bg_orange_1x.webp';
+import orangeHeroMobile2x from '../images/hero_mobile_bg_orange_2x.png';
+import orangeHeroMobileWebP2x from '../images/hero_mobile_bg_orange_2x.webp';
 
 import orangeHeroTablet1x from '../images/hero_tablet_bg_orange_1x.png';
 import orangeHeroTabletWebP1x from '../images/hero_tablet_bg_orange_1x.webp';
 import orangeHeroTablet2x from '../images/hero_tablet_bg_orange_2x.png';
 import orangeHeroTabletWebP2x from '../images/hero_tablet_bg_orange_2x.webp';
 
-import {
-  default as orangeHeroDesktop1x,
-  default as orangeHeroDesktopWebP1x,
-} from '../images/hero_desktop_bg_orange_1x.png';
-import {
-  default as orangeHeroDesktop2x,
-  default as orangeHeroDesktopWebP2x,
-} from '../images/hero_desktop_bg_orange_2x.png';
+import orangeHeroDesktop1x from '../images/hero_desktop_bg_orange_1x.png';
+import orangeHeroDesktopWebP1x from '../images/hero_desktop_bg_orange_1x.webp';
+import orangeHeroDesktop2x from '../images/hero_desktop_bg_orange_2x.png';
+import orangeHeroDesktopWebP2x from '../images/hero_desktop_bg_orange_2x.webp';
 
 import orangeCoversDesktop1x from '../images/covers_desktop_bg_orange_1x.png';
 import orangeCoversDesktopWebP1x from '../images/covers_desktop_bg_orange_1x.webp';
@@ -198,7 +190,6 @@ const themes = {
 
     '--tablet-cover-bg-1x': `url(${redCoversTablet1x})`,
     '--tablet-cover-bg-2x': `url(${redCoversTablet2x})`,
-
     '--tablet-cover-bg-webP-1x': `url(${redCoversTabletWebP1x})`,
     '--tablet-cover-bg-webP-2x': `url(${redCoversTabletWebP2x})`,
 
@@ -210,8 +201,8 @@ const themes = {
   green: {
     '--accent': '#c6e327',
     '--mobile-hero-bg-1x': `url(${greenHeroMobile1x})`,
-    '--mobile-hero-bg-2x': `url(${greenHeroMobileWebP1x})`,
-    '--mobile-hero-bg-webP-1x': `url(${greenHeroMobile2x})`,
+    '--mobile-hero-bg-2x': `url(${greenHeroMobile2x})`,
+    '--mobile-hero-bg-webP-1x': `url(${greenHeroMobileWebP1x})`,
     '--mobile-hero-bg-webP-2x': `url(${greenHeroMobileWebP2x})`,
 
     '--tablet-hero-bg-1x': `url(${greenHeroTablet1x})`,
@@ -230,14 +221,13 @@ const themes = {
     '--mobile-cover-bg-webP-2x': `url(${greenCoversMobileWebP2x})`,
 
     '--tablet-cover-bg-1x': `url(${greenCoversTablet1x})`,
-    '--tablet-cover-bg-2x': `url(${greenCoversTabletWebP1x})`,
-
-    '--tablet-cover-bg-webP-1x': `url(${greenCoversTablet2x})`,
+    '--tablet-cover-bg-2x': `url(${greenCoversTablet2x})`,
+    '--tablet-cover-bg-webP-1x': `url(${greenCoversTabletWebP1x})`,
     '--tablet-cover-bg-webP-2x': `url(${greenCoversTabletWebP2x})`,
 
     '--desktop-cover-bg-1x': `url(${greenCoversDesktop1x})`,
-    '--desktop-cover-bg-2x': `url(${greenCoversDesktopWebP1x})`,
-    '--desktop-cover-bg-webP-1x': `url(${greenCoversDesktop2x})`,
+    '--desktop-cover-bg-2x': `url(${greenCoversDesktop2x})`,
+    '--desktop-cover-bg-webP-1x': `url(${greenCoversDesktopWebP1x})`,
     '--desktop-cover-bg-webP-2x': `url(${greenCoversDesktopWebP2x})`,
   },
   blue: {
@@ -263,14 +253,12 @@ const themes = {
     '--mobile-cover-bg-webP-2x': `url(${blueCoversMobileWebP2x})`,
 
     '--tablet-cover-bg-1x': `url(${blueCoversTablet1x})`,
-    '--tablet-cover-bg-2x': `url(${blueCoversTabletWebP1x})`,
-
-    '--tablet-cover-bg-webP-1x': `url(${blueCoversTablet2x})`,
+    '--tablet-cover-bg-2x': `url(${blueCoversTablet2x})`,
+    '--tablet-cover-bg-webP-1x': `url(${blueCoversTabletWebP1x})`,
     '--tablet-cover-bg-webP-2x': `url(${blueCoversTabletWebP2x})`,
-
     '--desktop-cover-bg-1x': `url(${blueCoversDesktop1x})`,
-    '--desktop-cover-bg-2x': `url(${blueCoversDesktopWebP1x})`,
-    '--desktop-cover-bg-webP-1x': `url(${blueCoversDesktop2x})`,
+    '--desktop-cover-bg-2x': `url(${blueCoversDesktop2x})`,
+    '--desktop-cover-bg-webP-1x': `url(${blueCoversDesktopWebP1x})`,
     '--desktop-cover-bg-webP-2x': `url(${blueCoversDesktopWebP2x})`,
   },
   'dark-orange': {
@@ -296,14 +284,13 @@ const themes = {
     '--mobile-cover-bg-webP-2x': `url(${darkOrangeCoversMobileWebP2x})`,
 
     '--tablet-cover-bg-1x': `url(${darkOrangeCoversTablet1x})`,
-    '--tablet-cover-bg-2x': `url(${darkOrangeCoversTabletWebP1x})`,
-
-    '--tablet-cover-bg-webP-1x': `url(${darkOrangeCoversTablet2x})`,
+    '--tablet-cover-bg-2x': `url(${darkOrangeCoversTablet2x})`,
+    '--tablet-cover-bg-webP-1x': `url(${darkOrangeCoversTabletWebP1x})`,
     '--tablet-cover-bg-webP-2x': `url(${darkOrangeCoversTabletWebP2x})`,
 
     '--desktop-cover-bg-1x': `url(${darkOrangeCoversDesktop1x})`,
-    '--desktop-cover-bg-2x': `url(${darkOrangeCoversDesktopWebP1x})`,
-    '--desktop-cover-bg-webP-1x': `url(${darkOrangeCoversDesktop2x})`,
+    '--desktop-cover-bg-2x': `url(${darkOrangeCoversDesktop2x})`,
+    '--desktop-cover-bg-webP-1x': `url(${darkOrangeCoversDesktopWebP1x})`,
     '--desktop-cover-bg-webP-2x': `url(${darkOrangeCoversDesktopWebP2x})`,
   },
   'dark-green': {
@@ -329,14 +316,13 @@ const themes = {
     '--mobile-cover-bg-webP-2x': `url(${darkGreenCoversMobileWebP2x})`,
 
     '--tablet-cover-bg-1x': `url(${darkGreenCoversTablet1x})`,
-    '--tablet-cover-bg-2x': `url(${darkGreenCoversTabletWebP1x})`,
-
-    '--tablet-cover-bg-webP-1x': `url(${darkGreenCoversTablet2x})`,
+    '--tablet-cover-bg-2x': `url(${darkGreenCoversTablet2x})`,
+    '--tablet-cover-bg-webP-1x': `url(${darkGreenCoversTabletWebP1x})`,
     '--tablet-cover-bg-webP-2x': `url(${darkGreenCoversTabletWebP2x})`,
 
     '--desktop-cover-bg-1x': `url(${darkGreenCoversDesktop1x})`,
-    '--desktop-cover-bg-2x': `url(${darkGreenCoversDesktopWebP1x})`,
-    '--desktop-cover-bg-webP-1x': `url(${darkGreenCoversDesktop2x})`,
+    '--desktop-cover-bg-2x': `url(${darkGreenCoversDesktop2x})`,
+    '--desktop-cover-bg-webP-1x': `url(${darkGreenCoversDesktopWebP1x})`,
     '--desktop-cover-bg-webP-2x': `url(${darkGreenCoversDesktopWebP2x})`,
   },
   orange: {
@@ -360,16 +346,13 @@ const themes = {
     '--mobile-cover-bg-2x': `url(${orangeCoversMobile2x})`,
     '--mobile-cover-bg-webP-1x': `url(${orangeCoversMobileWebP1x})`,
     '--mobile-cover-bg-webP-2x': `url(${orangeCoversMobileWebP2x})`,
-
     '--tablet-cover-bg-1x': `url(${orangeCoversTablet1x})`,
-    '--tablet-cover-bg-2x': `url(${orangeCoversTabletWebP1x})`,
-
-    '--tablet-cover-bg-webP-1x': `url(${orangeCoversTablet2x})`,
+    '--tablet-cover-bg-2x': `url(${orangeCoversTablet2x})`,
+    '--tablet-cover-bg-webP-1x': `url(${orangeCoversTabletWebP1x})`,
     '--tablet-cover-bg-webP-2x': `url(${orangeCoversTabletWebP2x})`,
-
     '--desktop-cover-bg-1x': `url(${orangeCoversDesktop1x})`,
-    '--desktop-cover-bg-2x': `url(${orangeCoversDesktopWebP1x})`,
-    '--desktop-cover-bg-webP-1x': `url(${orangeCoversDesktop2x})`,
+    '--desktop-cover-bg-2x': `url(${orangeCoversDesktop2x})`,
+    '--desktop-cover-bg-webP-1x': `url(${orangeCoversDesktopWebP1x})`,
     '--desktop-cover-bg-webP-2x': `url(${orangeCoversDesktopWebP2x})`,
   },
 };
