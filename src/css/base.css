@@ -41,6 +41,10 @@ body {
   overflow: hidden;
 }
 
+html.is-modal-open {
+  overflow-y: hidden;
+}
+
 .section {
   padding-bottom: 64px;
 }
