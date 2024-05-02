@@ -8,7 +8,6 @@ function openMenuList(event) {
   if (event.currentTarget === menuNav) {
     menu.classList.toggle('is-hidden');
   }
-  return;
 }
 
 menu.querySelectorAll('a').forEach(link => {

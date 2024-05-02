@@ -12,7 +12,7 @@ function toggleModal(event) {
   if (event.target === closeModalBtn || event.target === listMenuItem) {
     modal.classList.add('is-hidden');
   } else modal.classList.toggle('is-hidden');
-  /* document.body.classList.toggle('no-scroll'); */
+  document.documentElement.classList.toggle('is-modal-open');
 }
 
 listMenuItem.querySelectorAll('a').forEach(link => {

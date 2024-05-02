@@ -10,14 +10,13 @@ function onInput(e) {
   const statusMessage = e.target.nextElementSibling;
   const inputName = e.target.name;
 
-  if (!e.target.checkValidity()) showError(statusMessage, inputName);
+  if (!e.target.checkValidity() || !e.target.value.trim().length)
+    showError(statusMessage, inputName);
   else showSuccess(statusMessage);
 }
 
 async function onSubmit(e) {
   e.preventDefault();
-
-  document.body.classList.add('modal-open');
 
   const formData = new FormData(e.target);
   const dataToSend = {};
@@ -67,11 +66,12 @@ function setModalText({ title, message }) {
   modal.classList.remove('is-hidden');
   modal.querySelector('.modal-title').innerText = title;
   modal.querySelector('.modal-captain').innerText = message;
+  document.documentElement.classList.add('is-modal-open');
 }
 
 function closeModal() {
   modal.classList.add('is-hidden');
-  document.body.classList.add('modal-open');
+  document.documentElement.classList.remove('is-modal-open');
   modal.removeEventListener('click', onClick);
   window.removeEventListener('keyup', onKeyup);
 }
